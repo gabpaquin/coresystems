@@ -1,0 +1,93 @@
+
+/* root element for tabs  */
+ul.css-tabs {  
+  margin: 0;
+  margin-left: 15px;
+	padding:0;
+}
+
+/* single tab */
+ul.css-tabs li {  
+	float:left;	 
+	padding-bottom: 4px; 
+	margin:0;  
+	list-style-type:none;	
+	clear: both;
+}
+
+ul.css-tabs li:first-child {  
+  padding-top: 10px;
+}
+
+/* link inside the tab. uses a background image */
+ul.css-tabs a { 
+	float:left;
+	font-size:80%;
+	display:block;
+	text-decoration:none;
+	min-height:18px;
+	color:#777;
+	margin-right:2px;
+	position:relative;
+	top:1px;	
+	outline:0;
+	width: 95px;
+  padding: 4px;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+ul.css-tabs a:hover {
+	background-color:#F7F7F7;
+	color:#333;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+  box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
+}
+	
+/* selected tab */
+ul.css-tabs a.current {
+	background-color:#ddd;
+	border-color:#bbb;	
+	color:#000;	
+	cursor:default;
+}
+
+	
+/* tab pane */
+.css-panes > div {
+  margin-left: 120px;
+	display:none;
+  height: 320px;
+  width: 320px;
+  padding: 4px;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+}
+
+.css-panes .textbox {
+  margin-top: 230px;
+  height: 80px;
+  width: 308px;
+  padding: 5px 6px;
+  color: #fff;
+	/* Fallback for web browsers that doesn't support RGBa */
+	background: rgb(0, 0, 0);
+	/* RGBa with 0.6 opacity */
+	background: rgba(0, 0, 0, 0.5);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#11000000, endColorstr=#11000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#11000000, endColorstr=#11000000)";
+}
+
+
+

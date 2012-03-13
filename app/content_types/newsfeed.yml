@@ -1,0 +1,11 @@
+description: news feed for the front page
+name: newsfeed
+order_by: created_at
+order_direction: asc
+slug: newsfeed
+highlighted_field_name: news
+fields:
+- news:
+    required: true
+    label: news
+    kind: text

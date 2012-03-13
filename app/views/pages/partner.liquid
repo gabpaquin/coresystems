@@ -1,0 +1,26 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %} 
+{% block content %}
+  <div class="container">
+  </div>
+  <div id="partner" class="white_section" style="margin-bottom:400px">  
+    <div class="container">
+      <div class="span-22 prepend-1 append-bottom last">
+        <h3>our partner network</h3>
+        {% editable_long_text 'Devices' %}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate varius orci, id porta purus accumsan quis. Proin eget orci nisi, nec congue risus. Maecenas aliquet lacus vel risus porttitor tempor. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Duis hendrerit neque eu nibh tristique vel tempus risus porttitor. Integer sit amet pharetra enim. Maecenas tristique lorem sed dolor euismod vitae faucibus arcu mollis. Nulla eu lectus at orci porta congue sed lobortis risus. Nam venenatis ornare convallis.  
+        {% endeditable_long_text %} 
+      </div>
+      <div class="sidemap_line span-24 last">
+      </div>  
+      <div class="span-22 prepend-1 append-bottom last">
+        <h3>interested in becoming a member?</h3>
+        <a href="#">become a member</a><br>
+        <a href="#">download starter guide</a>        
+      </div>
+    </div>
+  </div>
+  {% include 'footer' %}
+{% endblock %}  

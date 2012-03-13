@@ -1,0 +1,78 @@
+site:
+  locale: en
+  meta_description: some meta description
+  meta_keywords: some meta keywords
+  name: webage
+  seo_title: coresystems
+  pages:
+  - index:
+      published: true
+      title: Home page
+      listed: true
+  - china_team:
+      published: true
+      title: China team
+      listed: true
+  - company:
+      published: true
+      title: Company
+      listed: true
+      editable_elements:
+      - block: content
+        slug: social media highlight
+        content: ""
+      - block: content
+        slug: Devices
+        content: ""
+  - partner:
+      published: true
+      title: Partner
+      listed: true
+      editable_elements:
+      - block: content
+        slug: Devices
+        content: ""
+  - products:
+      published: true
+      title: Products
+      listed: true
+  - service:
+      published: true
+      title: Service
+      listed: true
+      editable_elements:
+      - block: content
+        slug: Devices
+        content: ""
+  - starter_guide:
+      published: true
+      title: Starter guide
+      listed: true
+  - success_story:
+      published: true
+      title: Success story
+      listed: true
+  - company_overview:
+      published: true
+      title: Company overview
+      listed: true
+      editable_elements:
+      - block: content
+        slug: company description
+        content: ""
+  - download_area:
+      published: true
+      title: Download area
+      listed: true
+  - mobile_solution:
+      published: true
+      title: Mobile solution
+      listed: true
+      editable_elements:
+      - block: content
+        slug: service_text
+        content: ""
+  - "404":
+      published: true
+      title: Page not found
+      listed: true

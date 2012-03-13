@@ -1,0 +1,20 @@
+{% block slogan %}
+{% include 'logo' %}
+<div id='slogan_work' class='slogan'>
+  <h1>{% editable_short_text 'work slogan' %} Our Work {% endeditable_short_text %}</h1>
+  <nav>
+    <ul>
+      <li><a href="/work" class="current">Our work</a></li>        
+      <li> <span class="splitter_work"></span> </li>
+      <li><a href="/testimonials">Testimonials</a></li>
+    </ul>
+  </nav>
+  <h2>
+    {% editable_short_text 'work slogan subtext' %}
+    We create great UX for startups and established brands.
+    We measure our designs by <em>both visual appeal</em> and their
+    real-world performance
+    {% endeditable_short_text %}
+  </h2>
+</div>
+{% endblock slogan %}

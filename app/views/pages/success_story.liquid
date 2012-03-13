@@ -1,0 +1,26 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %}  
+{% block content %}
+  <div id="success_story" class="white_section section_blue_line" style="margin-bottom:400px">  
+    <div class="container">
+      <div class="span-22 prepend-1 last">
+        <h3>Success Story:</h3>
+        {% editable_long_text 'sucess story' %}
+          鹤鸣软件上海为客户提供的服务
+          随着博瑞达机械在亚洲的快速发展，博瑞达亟需在销售以及售后服务的务上统一各个子公司的业务流程，发挥出集团管理优势。鹤鸣软件凭借自身丰富的国际项目实施经验和国际化公司的背景，取得了客户的信任。鹤鸣软件派出高水平的咨询顾问，与博瑞达总部CFO充分沟通，相互协作，面对重重挑战，解决了一个又一个难题，使得博瑞达的ERP策略得以在亚洲顺利贯彻执行，完成了博瑞达司的战略构想。
+
+          博瑞达集团的ERP项目在亚洲由鹤鸣软件全权负责，包括中国，新加坡，以及计划中的印度分部。在项目中鹤鸣软件的团队主要的亮点为：
+
+          - 实现物料单(BOM)在6个国家的7个SBO数据库的同步
+          - 实现跨国的分部之间的库存数据共享
+          - 实现跨国的分部之间的公司间交易
+          - 实现在SBO中的库位管理
+          - 实现库存盘点的优化及自动化
+        {% endeditable_long_text %}
+      </div>
+    </div>  
+  </div> 
+{% include 'footer' %}
+{% endblock %} 

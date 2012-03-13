@@ -1,0 +1,28 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %} 
+{% block content %}
+  <div class="container">
+    {% include 'menu' %} 
+  </div>
+  <div id="company_overview" class="white_section">  
+    <div class="container">
+      <div class="span-14 prepend-1">
+        <img src="{{ 'frontpage_company_overview_video_placeholder.jpg' | theme_image_url }}" style="margin: 30px 0 0">
+      </div>
+      <div class="span-8 last">
+        <h3>Our Vision:</h3>
+			    {% editable_long_text 'company description' %}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate varius orci, id porta purus accumsan quis. Proin eget orci nisi, nec congue risus. Maecenas aliquet lacus vel risus porttitor tempor. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Duis hendrerit neque eu nibh tristique vel tempus risus porttitor. Integer sit amet pharetra enim. Maecenas tristique lorem sed dolor euismod vitae faucibus arcu mollis. Nulla eu lectus at orci porta congue sed lobortis risus. Nam venenatis ornare convallis.      
+			    {% endeditable_long_text %}    
+      </div>
+      <div class="span-24 last">
+        <img src="{{ 'frontpage_company_overview_bottom.jpg' | theme_image_url }}" style="margin: 30px 0 0 20px;">
+      </div>
+    </div>    
+  </div>  
+  <div class="container">
+    {% include 'footer' %}
+  </div>
+{% endblock %}  
