@@ -47,13 +47,13 @@
             <div id="landing_page_top">
               <div id="frontpage_picture_frame" class="span-24 last" style="height: 430px">
                   <div id="coin-slider" style="height: 430px">
-                    <img src="{{ 'frontpage_top_section_image1.jpg' | theme_image_url }}">
-                    <img src="{{ 'test3_small_copy.png' | theme_image_url }}">
-                    <img src="{{ 'test4_small_copy.png' | theme_image_url }}">
-                    {% for new in contents.slide_images limit:2%}  
-                      <img src="{{ new.image | theme_image_url }}">                     
-                    {% endfor %}
-                  </div>
+              {% for new in contents.slide_images%}
+              <div >
+               {{ new.image.url | image_tag}}  
+                <span>{{ new.banner }}</span>
+              </div>
+              {% endfor %}
+            </div>
               </div>
             </div>
             <div class="sidemap_line span-24 last" style="padding: 10px 0px;">
