@@ -1,10 +1,13 @@
-order_direction: asc
 name: slide_images
-slug: slide_images
 order_by: created_at
+order_direction: asc
+slug: slide_images
 highlighted_field_name: image
 fields:
 - image:
-    required: true
-    label: image
     kind: file
+    label: image
+    required: true
+- banner:
+    label: banner
+    kind: text
