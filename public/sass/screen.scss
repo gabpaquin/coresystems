@@ -1,0 +1,353 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+@import "blueprint";
+
+body {
+	@include blueprint;
+  font:14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  a:visited { color: #06C; }
+}
+
+/** 
+  needs changing:
+    language selection hover needs to have the images preloaded
+
+
+ **/
+ 
+ /**-----------------------------------**/
+/**---------- GENERAL STUFF -----------**/
+/**------------------------------------**/
+
+ 
+.sidemap_line {
+   padding: 30px 0;
+   background: url('../images/sitemap_line.png') no-repeat center center;
+   height: 1px; 
+}
+ 
+.shadow {
+  -moz-box-shadow:    2px 2px 5px 0 #CCC;
+  -webkit-box-shadow: 2px 2px 5px 0 #CCC;
+  box-shadow:         2px 2px 5px 0 #CCC;
+}
+
+body .custom-prepend-15 {
+  padding-left: 15px;
+}
+
+.picturestyle1 {
+  padding:15px 20px;
+  padding: 4px;
+  border: 1px solid #bbb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  max-width: 220px;
+  float: left;
+
+}
+
+/**-----------------------------------**/
+/**------------- MENU BAR ------------**/
+/**-----------------------------------**/
+
+.menu_bar {
+  margin: 10px auto;
+  font-size: 85%;
+}
+
+.menu_bar ul, .menu_bar ul li {
+  float: left;
+  list-style-type: none;
+}
+
+.menu_bar ul li {
+  margin-left: 120px;
+}
+
+.menu_bar li a{
+  padding: 2px 0;
+  display: block;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: #333;
+  }
+}
+
+.menu_bar li:first-child {
+  margin-left: 0;
+}
+.menu_bar:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;    
+}
+
+
+#mini_menu_bar {
+  font-size: 85%;
+}
+
+#mini_menu_bar ul, #mini_menu_bar ul li {
+  float: left;
+  list-style-type: none;
+}
+
+#mini_menu_bar ul li {
+  margin-left: 20px;
+}
+
+#mini_menu_bar li a{
+  padding: 2px 0;
+  display: block;
+  text-decoration: none;
+  &:hover, &:focus {
+    color: #bbb;
+  }
+}
+
+#mini_menu_bar li:first-child {
+  margin-left: 0;
+}
+#mini_menu_bar:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;    
+}
+ 
+
+/**-----------------------------------------------**/
+/**- HEADER STUFF AND TOP SECTION (AS FRONTPAGE) -**/
+/**-----------------------------------------------**/
+
+#landing_page_top {
+  margin-bottom: 50px;
+}
+
+.top_section {
+  background-color: #000;
+  color: #fff;
+  #header {
+    padding: 15px 0 20px;
+    vertical-align: middle;
+  }
+  .language_select_de a {
+    background: url('../images/Sprachbutton_grau_de.png') no-repeat center center;
+    &:hover, &:visited {
+      background: url('../images/Sprachbutton_weiss_de.png') no-repeat center center;      
+    }
+    background-repeat: no-repeat;
+    float: left;
+    height: 22px;
+    width: 23px;
+    padding: 0 5px;
+  }
+  .language_select_en a {
+    background: url('../images/Sprachbutton_grau_en.png') no-repeat center center;
+    &:hover, &:visited {
+      background: url('../images/Sprachbutton_weiss_en.png') no-repeat center center;      
+    }
+    float: left;
+    height: 22px;
+    width: 23px;
+    padding: 0 5px;
+  }
+}
+
+#frontpage_picture_frame {
+  padding: 10px; 
+  img {
+    width: 950px;
+  }
+}
+
+#frontpage_pane_mobile {
+  background: url('http://www.coresystems.ch/wp-content/uploads/pic/9593_eCommerce_go_small_314px.jpg') no-repeat center center; 
+}
+
+#frontpage_pane_country_package {
+  background: url('http://www.coresystems.ch/wp-content/uploads/pic/1453_coresuite_country_pack_Search_480px.jpg') no-repeat 4px 20px;
+  background-size: 320px; 
+}
+
+#frontpage_pane_cube {
+  background: url('http://www.coresystems.ch/wp-content/uploads/pic/3751_coresuite_cube_Auswertungen_480px.jpg') no-repeat 4px 20px; 
+  background-size: 320px;
+}
+
+#frontpage_pane_integration {
+  background: url('http://www.coresystems.ch/wp-content/uploads/pic/3846_01_Visuals_Subsidiary_314px_en.jpg') no-repeat 4px 20px; 
+  background-size: 320px;
+}
+
+#frontpage_pane_mobility {
+  background: url('http://www.coresystems.ch/wp-content/uploads/pic/7606_Consulting_3_Bilder2.jpg') no-repeat 4px 20px; 
+  background-size: 320px;
+}
+
+
+.css-panes > div {
+  background: url('http://placehold.it/320x320') no-repeat center center;
+}
+
+.top_section:after {
+  background: url('../images/frontpage_top_section_bottom_bar.png') repeat-x;
+  height: 53px;
+  display: block;
+  content: "";
+  border-bottom: 10px solid #fff;
+}
+
+.top_section {
+  background-color: #000;
+  color: #fff;
+}
+.top_section #header {
+  padding: 15px 0 20px;
+  vertical-align: middle;
+}
+.top_section .language_select_de a {
+  background: url("../images/Sprachbutton_grau_de.png") no-repeat center center;
+  background-repeat: no-repeat;
+  float: left;
+  height: 22px;
+  width: 23px;
+  padding: 0 5px;
+}
+.top_section .language_select_de a:hover, .top_section .language_select_de a:visited {
+  background: url("../images/Sprachbutton_weiss_de.png") no-repeat center center;
+}
+.top_section .language_select_en a {
+  background: url("../images/Sprachbutton_grau_en.png") no-repeat center center;
+  float: left;
+  height: 22px;
+  width: 23px;
+  padding: 0 5px;
+}
+.top_section .language_select_en a:hover, .top_section .language_select_en a:visited {
+  background: url("../images/Sprachbutton_weiss_en.png") no-repeat center center;
+}
+.top_section #frontpage_news {
+  font-size: 90%;
+  margin-left: 20px;
+}
+
+#product_top_section {
+  margin: 10px 0 20px;
+  background: url("../images/productpage_top2.jpg") no-repeat center center;
+  height: 464px;
+  width: 950px;
+}
+
+/**-----------------------------------**/
+/**------------- CONTENT -------------**/
+/**-----------------------------------**/
+
+#frontpage_content:after {
+  content: "."; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden; 
+  margin-bottom: 20px;   
+}
+
+
+.white_section {
+  margin-bottom: 30px;
+}
+
+.grey_section {
+  background-color: #eceffd;
+  background-color: #e7e7e8;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(231, 231, 232)), color-stop(1, rgb(236, 239, 253))) !important;
+  background: -moz-linear-gradient(center top, rgb(231, 231, 232) 0%, rgb(236, 239, 253) 100%) !important;
+  .container {
+    margin-bottom: 30px;    
+  }
+}
+
+.grey_section:before, .grey_section:after {
+  height: 1px;
+  display: block;
+  content: "";
+  background-color: #4b80c1;
+  margin-bottom: 30px;
+  .last_section {
+    background-color: inherent;
+  }
+}
+
+.last_section {
+  margin-bottom: 10px;
+}
+
+#on_demand {
+  .span-4 {
+    max-height: 80px;
+    overflow: hidden;
+  }
+  .span-24 {
+    @include prepend-top;
+  }
+}
+
+#on_premise {
+  .span-2 {
+    img {
+      width: 150px;
+    }
+  }
+  .span-18 {
+    @include prepend-top;
+    img {
+      height: 20px;
+      float: left;
+      margin-right: 5px;
+    }
+  }
+}
+
+/**-----------------------------------**/
+/**---------- FOOTER STUFF -----------**/
+/**-----------------------------------**/
+
+#footer:before {
+  background: url('../images/footer_section_top_bar.png') repeat-x;
+  height: 53px;
+  display: block;
+  content: "";
+}
+
+#footer{
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  #footer_content {
+    border-bottom: 5px solid #000;
+    font-size: 85%;
+  }
+}
+
+#footer ul, #footer ul li {
+  list-style-type: none;
+  float: left;
+  padding-left: 0;
+}
+
+#footer li a {
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+
+
+
