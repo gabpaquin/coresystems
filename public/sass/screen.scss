@@ -299,6 +299,9 @@ body .custom-prepend-15 {
   .span-24 {
     @include prepend-top;
   }
+  b {
+    color: #06C;
+  }
 }
 
 #on_premise {
@@ -310,10 +313,13 @@ body .custom-prepend-15 {
   .span-18 {
     @include prepend-top;
     img {
-      height: 20px;
+      height: 30px;
       float: left;
-      margin-right: 5px;
+      margin-right: 7px;
     }
+  }
+  b {
+    color: #06C;
   }
 }
 

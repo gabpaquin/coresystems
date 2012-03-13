@@ -1396,26 +1396,34 @@ body .custom-prepend-15 {
 #on_demand .span-24 {
   margin-top: 1.5em;
 }
+/* line 302, ../sass/screen.scss */
+#on_demand b {
+  color: #06C;
+}
 
-/* line 306, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 #on_premise .span-4 img {
   width: 150px;
 }
-/* line 310, ../sass/screen.scss */
+/* line 313, ../sass/screen.scss */
 #on_premise .span-18 {
   margin-top: 1.5em;
 }
-/* line 312, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #on_premise .span-18 img {
-  height: 20px;
+  height: 30px;
   float: left;
-  margin-right: 5px;
+  margin-right: 7px;
+}
+/* line 321, ../sass/screen.scss */
+#on_premise b {
+  color: #06C;
 }
 
 /**-----------------------------------**/
 /**---------- FOOTER STUFF -----------**/
 /**-----------------------------------**/
-/* line 324, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 #footer:before {
   background: url("../images/footer_section_top_bar.png") repeat-x;
   height: 53px;
@@ -1423,26 +1431,26 @@ body .custom-prepend-15 {
   content: "";
 }
 
-/* line 331, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 #footer {
   width: 100%;
   background-color: #000;
   color: #fff;
 }
-/* line 335, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 #footer #footer_content {
   border-bottom: 5px solid #000;
   font-size: 85%;
 }
 
-/* line 341, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 #footer ul, #footer ul li {
   list-style-type: none;
   float: left;
   padding-left: 0;
 }
 
-/* line 347, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #footer li a {
   padding: 2px 5px;
   text-decoration: none;
