@@ -72,18 +72,25 @@
   {% block content %}
     <div class="container">
         <div class="span-24 last">
-          <div id="frontpage_content">
-            <div class="box span-24 prepend-top last">
-              <h3>关于鹤鸣</h3>
-              coresystems ag成立于2002年，总部设在瑞士苏黎世边上的 Windisch。随着稳定的业务增长，coresystems 陆续在布赖斯高的弗赖堡、伦敦、纽约市和上海设立了办事处。此外，公司不仅在戈尔韦郡和哥本哈根设立了支持中心，还在克卢日-纳波卡（Cluj-Napoca）设立了开发中心。coresuite产品系列由全球合格的SAP合作商负责分销，客户群囊括了数千家工业和服务业内不同领域的大中小企业。            </div>
-            <div class="sidemap_line span-24 last">
-            </div>  
+          <div class="box span-24 prepend-top last">
+            <h3>关于鹤鸣</h3>
+            coresystems ag成立于2002年，总部设在瑞士苏黎世边上的 Windisch。随着稳定的业务增长，coresystems 陆续在布赖斯高的弗赖堡、伦敦、纽约市和上海设立了办事处。此外，公司不仅在戈尔韦郡和哥本哈根设立了支持中心，还在克卢日-纳波卡（Cluj-Napoca）设立了开发中心。coresuite产品系列由全球合格的SAP合作商负责分销，客户群囊括了数千家工业和服务业内不同领域的大中小企业。 
+          </div>
+
+          <div class="sidemap_line span-24 last">
+          </div> 
+        </div>
+      </div>      
+  <div id="on_demand" class="grey_section">  
+    <div class="container">
+      <div class="span-24 last">
+        <div id="frontpage_content">
             <div class="span-12">
               <div class="custom-prepend-15">
                 <h3>主打产品</h3>
               </div>
               <ul class="css-tabs">
-              	<li><a href="#">移动</a></li>
+              	<li><a href="#">移动应用程序</a></li>
               	<li><a href="#">国家本地服务包</a></li>
               	<li><a href="#">cube</a></li>
               </ul>
@@ -132,26 +139,23 @@
               	</div>
               </div>
             </div>
-            <div class="sidemap_line span-24 last">
-            </div>  
+           </div>
+          </div>
+         </div>
+        </div>
+          <div class="container">
             <div class="span-24 last">
-              <h3>奖项</h3>
-              <img src="http://www.coresystems.ch/wp-content/uploads/pic/2078_Partner_980px.jpg" style="width: 100%;">
-            </div>
-            <div class="sidemap_line span-24 last">
-            </div>
-            <div class="span-24 last">
-              <h3>客户群</h3>
+            <div id="frontpage_customer_logo" class="span-20 prepend-2 last">
+              <h3><a style="font-size:1.6" href="/success_story">共同管理全球5000家客户...</a></h3>
               
-              <img src="{{ 'WK_Logo.jpg' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+              <img src="{{ 'WK_Logobw.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
               <img src="{{ 'Keune_Logo.jpg' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;">
-              <img src="{{ 'Lorentz.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
-              <img src="{{ 'burderer.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
-              <img src="{{ 'Bikes_Logo.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;">  
+              <img src="{{ 'Lorentzbw.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+              <img src="{{ 'burdererbw.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+              <img src="{{ 'Bikes_Logo.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
             </div>
           </div>  
       </div>
-    </div
   {% include 'footer' %}
   {% endblock %}
 

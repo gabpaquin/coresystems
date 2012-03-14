@@ -3,26 +3,41 @@
   {% include 'top_section_mini' %}
 {% endblock %} 
 {% block content %}
-  <div class="container">
-    {% include 'menu' %} 
-  </div>
   <div id="company_overview" class="white_section">  
     <div class="container">
       <div class="span-14 prepend-1">
         <img src="{{ 'frontpage_company_overview_video_placeholder.jpg' | theme_image_url }}" style="margin: 30px 0 0">
       </div>
       <div class="span-8 last">
-        <h3>Our Vision:</h3>
+        <h3>我们的愿景</h3>
 			    {% editable_long_text 'company description' %}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate varius orci, id porta purus accumsan quis. Proin eget orci nisi, nec congue risus. Maecenas aliquet lacus vel risus porttitor tempor. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Duis hendrerit neque eu nibh tristique vel tempus risus porttitor. Integer sit amet pharetra enim. Maecenas tristique lorem sed dolor euismod vitae faucibus arcu mollis. Nulla eu lectus at orci porta congue sed lobortis risus. Nam venenatis ornare convallis.      
-			    {% endeditable_long_text %}    
+          <p>
+          成为商务应用程序的头号供应商
+          </p>  
+			    {% endeditable_long_text %} 
+
+          <h3>我们的使命</h3>
+          {% editable_long_text 'company description' %}
+          <p>
+          年轻人们共同开发卓越的创新产品。
+          成为“云计算”方面的先驱。
+          向分公司、子公司推广国际化ERP（企业资源管理）。
+          </p>  
+          {% endeditable_long_text %} 
+
+          <h3>我们的价值</h3>
+          {% editable_long_text 'company description' %}
+          <p>
+          可信赖的承诺
+          众多专门技术
+          全球支援中心
+          </p>  
+          {% endeditable_long_text %} 
       </div>
       <div class="span-24 last">
         <img src="{{ 'frontpage_company_overview_bottom.jpg' | theme_image_url }}" style="margin: 30px 0 0 20px;">
       </div>
     </div>    
   </div>  
-  <div class="container">
-    {% include 'footer' %}
-  </div>
+  {% include 'footer' %}
 {% endblock %}  

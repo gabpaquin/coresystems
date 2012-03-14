@@ -3,60 +3,143 @@
   {% include 'top_section_mini' %}
 {% endblock %} 
 {% block content %}
-  <div class="container">
-  </div>
   <div id="service_structure" class="white_section last_section">  
     <div class="container">
-      <div class="span-22 custom-prepend-15 prepend-top append-bottom last">
-        {% editable_long_text 'Devices' %}
-          我们采用最尖端的技术，如“云计算”和“移动计算”。借助统包标准解决方案，您的业务流程将实现最优化。经济学家和IT专家们对每一项目都全力以赴，满怀激情。此外，我们更有350个联盟伙伴，一起为国际项目提供最有力的支持。我们采用最尖端的技术，如“云计算”和“移动计算”。借助统包标准解决方案，您的业务流程将实现最优化。经济学家和IT专家们对每一项目都全力以赴，满怀激情。此外，我们更有350个联盟伙伴，一起为国际项目提供最有力的支持。
-        {% endeditable_long_text %}   
-      </div>
-      <div class="span-10 append-bottom">
-        <h2>集成</h2>
-        <img src="{{ 'service_overview_picture1.png' | theme_image_url }}" style="max-width: 430px; margin-top: 13px;"> 
-        <div class="custom-prepend-15 prepend-top">  
-          {% editable_long_text 'Devices' %}
-            ➢ 高品质统一的数据质量<br>
-            ➢ 符合国家特定标准<br>
-            ➢ 数周一次的产品介绍<br>
-            ➢ 内部数据的优越性
-          {% endeditable_long_text %}
-        </div>            
-      </div>
-      <div class="span-10 prepend-2 append-bottom last">
-        <h2>移动性</h2>     
-        <img src="{{ 'service_overview_picture2.png' | theme_image_url }}" style="max-width: 430px;"> 
-        <div class="custom-prepend-15 prepend-top">  
-          {% editable_long_text 'Devices' %}
-            ➢ 优质的现场服务<br>
-            ➢ 良好的成本收益率<br>
-            ➢ 高水平的可扩展性<br>
-            ➢ 数天一次的产品介绍<br>
-            ➢ 最新的安全标准<br>
-            ➢ 完善的脱机功能
-          {% endeditable_long_text %}
+     
+        <div class="span-11 prepend-2 append-1" style="margin-top:8em">
+          {% editable_long_text 'china service' %}
+          <p>        
+            鹤鸣软件拥有自己强大的开发团队，并将长久累积关于ERP开发的专业知识带来了中国。我们将coresuite产品依据中国环境要求做了在地化调整，未来将会为了亚洲市场研发更多的产品。为了成功的集成，还有满足政府的法规，我们深信在地化是非常重要的必经路程。如果您是在寻找深度定制化的软件以及特定的功能，我们就是您正在寻找的团队！
+            <span style="margin-top:20px; float: right; display:block">- Marco Schweighauser, 上海研发团队负责人</span>
+           </p> 
+          {% endeditable_long_text %}  
+        </div>
+        <div class="span-9 last">
+            <img src="{{ 'Marco Schweighauser.jpg' | theme_image_url }}" class="picturestyle1" style="max-width: 280px;">
+        </div>
+
+        <div class="sidemap_line span-24 last">
         </div> 
-      </div>
-      <div class="span-22 custom-prepend-15 prepend-top append-bottom last">
-         <h2>家客户</h2> 
-          <div class="span-12 last">
-              <img src="{{ 'service_customer1.png' | theme_image_url }}" class="picturestyle1"> <br><br>
-              Coresuite的产品大大减少了系统对内存的需求,
-              让我们的编程变得简易，提高了的工作效率‘
-              Endress+Hauser IT 部门
+        <div class="span-10 append-bottom">
+          <h2>
+            {% editable_short_text 'integration' %}
+              集成
+            {% endeditable_short_text %}
+          </h2>          
+          <img src="{{ 'service_overview_picture1.png' | theme_image_url }}" style="max-width: 430px; margin-top: 13px;">
+          <div class="custom-prepend-15 prepend-top">  
+            {% editable_long_text 'integration description' %}
+              ➢ 高品质统一的数据质量<br>
+              ➢ 符合国家特定标准<br>
+              ➢ 数周一次的产品介绍<br>
+              ➢ 内部数据的优越性
+            {% endeditable_long_text %}
+          </div>            
+        </div>
+        <div class="span-10 prepend-2 append-bottom last">
+          <h2>
+            {% editable_short_text 'mobility' %}
+              移动性
+            {% endeditable_short_text %}
+          </h2>               
+          <img src="{{ 'service_overview_picture2.png' | theme_image_url }}" style="max-width: 430px;"> 
+          <div class="custom-prepend-15 prepend-top">  
+            {% editable_long_text 'mobility description' %}
+              ➢ 优质的现场服务<br>
+              ➢ 良好的成本收益率<br>
+              ➢ 高水平的可扩展性<br>
+              ➢ 数天一次的产品介绍<br>
+              ➢ 最新的安全标准<br>
+              ➢ 完善的脱机功能
+            {% endeditable_long_text %}
           </div> 
-          <div class="span-12 last prepend-top">
-              <img src="{{ 'service_customer2.png' | theme_image_url }}" class="picturestyle1"> <br><br><br><br><br>
-              ‘我真希望coresuite的产品也可以用于SAP R/3’
-              Gerhard Meyer, CTO, Carl Schlenk AG
+        </div>
+        <div class="sidemap_line span-24 last">
+        </div>
+        <div class="span-24">
+          <div class="span-13">  
+            <h2>
+              {% editable_short_text 'software development' %}
+                SAP Business One
+              {% endeditable_short_text %}
+            </h2>
+          </div>
+          <div class="span-11  last" style="margin-bottom:3em">  
+              <img src="{{ 'sap.png' | theme_image_url }}" style="display:block; float:right; max-height:6em">
+          </div>
+          {% editable_long_text 'software development description' %}
+            <p>
+              SAP B1涵盖了企业各个业务功能，包括销售、装配、财务、采购和银行账户处理。它拥有友好的用户界面，SAP B1提供一个中央ERP应用标准接口，处理内部及外部的数据源信息，掌上电脑，CRM应用和其他领先的分析软件。 
+              详细内容： 
+              <br><br>
+              <span style="font-weight:700; margin-left:2em; display:block">管理</span>
+              数据支持，汇率设定，配置授权和预警功能，从第3方软件供应商便捷的获取合法信息。
+              <span style="font-weight:700; margin-left:2em; display:block">财务会计</span>
+              提高财务处理效率，此外在创建和维护会计科目时执行总分类帐，确定外币调节，预算管理。
+              <span style="font-weight:700; margin-left:2em; display:block">销售</span>              
+              准备出价，输入客户定单，交货计划，更新库存数量，发票和货物接收。
+              <span style="font-weight:700; margin-left:2em; display:block">采购</span>
+              有效的供应商管理，迅速的处理反馈，信用和支付管理。
+              <span style="font-weight:700; margin-left:2em; display:block">商业伙伴</span>
+              客户信息管理，代销商和供应商，创建销售活动的账户余额。
+              <span style="font-weight:700; margin-left:2em; display:block">银行处理</span>
+              便捷的处理支付业务例如票据接收，检查发放，接收检查，提前支付，信用卡支付和账户调解。
+              <span style="font-weight:700; margin-left:2em; display:block">仓库管理</span>
+              组织并致力于库存管理，价格清单和仓库事务。
+              <span style="font-weight:700; margin-left:2em; display:block">装配</span>
+              定义精确的物料清单，创建工作定单，检查和记录产品和物料的可用性。
+              <span style="font-weight:700; margin-left:2em; display:block">控制</span>
+              快速分析利润中心和准备各中心的损益报表。
+              <span style="font-weight:700; margin-left:2em; display:block">报表</span>
+              有目的的创建主要客户或供应商支付的报表，为销售和现金流，为会计科目和库存。
+              <br><br>
+              我们为全球的工业和贸易提供SAP B1服务，鹤鸣软件上还提供全程一步式SAP B1支持介绍服务，不论你身处何地。我们提供完整的满足您需求的定制划配置，不论您是否处理国际化的业务拓展，特定行业的修改，整合方案。
+
+              我们确保顺利进行和适应。通过我们在不同行业不同规模的企业的综合知识。我们分析的是可能需要通过标准化软件更为有利的处理的地方。这将确保这些新增功能在将来能持续的作用。<br><br>
+
+              为确保您的用户从开始就广泛的认同，我们会为您的企业开发定制划的培训理念。培训理念可以覆盖系统使用，商业背景信息或者变动管理。后者得益于使用SAP B1流程变得更精炼更综合和更规范化。<br><br>
+
+              如果你的服务器、网络和客户端不能满足目前和将来IT的负载要求。重要的是如何整合IT，以保护您的投资。此外，我们将提供系统元件，在您的环境中整合他们，确保运行平稳。
+              当然我们同样关注与管理和数据更新。我们将乐于配合您所需要的要求。您可以选择我们拨号到您的远程装置使用安全联机，或者使用我们数据处理中心的外包服务。 
+              只要您愿意，我们将在整个软件生命周期和操作过程中提供您可靠的支持。我们全球的应用服务和支持中心将提供您规范的理念和服务，从第一级的支持到操作你的设备。 
+           </p>
+          {% endeditable_long_text %}
+        </div>
+        <div class="sidemap_line span-24 last">
+        </div>
+        <div id="service_customers_quotes" class="span-22 custom-prepend-15 prepend-top append-bottom last">
+            {% editable_short_text 'customers' %}
+             <h2><a href="/success_story">成功案例...</a></h2>
+            {% endeditable_short_text %}          
+          <div class="span-22 last">
+            {% editable_long_text 'customer 1' %}
+              <img src="{{ 'service_customer1.png' | theme_image_url }}" class="picturestyle1" style="margin-right:5em"> 
+              <p>
+                Coresuite的产品大大减少了系统对内存的需求,
+                让我们的编程变得简易，提高了的工作效率‘
+                Endress+Hauser IT 部门
+              </p>
+            {% endeditable_long_text %}
+          </div> 
+          <div class="span-22 last prepend-top">
+            {% editable_long_text 'customer 2' %}
+              <img src="{{ 'service_customer2.png' | theme_image_url }}" class="picturestyle1" style="margin-right:5em">
+              <p>
+                ‘我真希望coresuite的产品也可以用于SAP R/3’
+                Gerhard Meyer, CTO, Carl Schlenk AG
+              </p>
+            {% endeditable_long_text %}
           </div>   
-          <div class="span-12 last prepend-top">
-              <img src="{{ 'service_customer3.png' | theme_image_url }}" class="picturestyle1"> <br><br><br>
-              ‘鹤鸣软件让我们感受到了一个追求质量，追求完美，提供优质服务的IT 公司以及一站式的IT解决方案’
-              Company Kardex Systems AG.
+          <div class="span-22 last prepend-top">
+            {% editable_long_text 'customer 3' %}
+              <img src="{{ 'service_customer3.png' | theme_image_url }}" class="picturestyle1" style="margin-right:5em"> 
+              <p>
+                ‘鹤鸣软件让我们感受到了一个追求质量，追求完美，提供优质服务的IT 公司以及一站式的IT解决方案’
+                Company Kardex Systems AG.
+              </p>
+            {% endeditable_long_text %}
           </div>         
-      </div> 
+        </div> 
     </div>    
   </div>  
   {% include 'footer' %}

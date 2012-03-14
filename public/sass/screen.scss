@@ -18,7 +18,6 @@ body {
  /**-----------------------------------**/
 /**---------- GENERAL STUFF -----------**/
 /**------------------------------------**/
-
  
 .sidemap_line {
    padding: 30px 0;
@@ -139,25 +138,25 @@ body .custom-prepend-15 {
     padding: 15px 0 20px;
     vertical-align: middle;
   }
-  .language_select_de a {
-    background: url('../images/Sprachbutton_grau_de.png') no-repeat center center;
+  .weibo a {
+    background: url('../images/weibo.jpg') no-repeat center center;
     &:hover, &:visited {
-      background: url('../images/Sprachbutton_weiss_de.png') no-repeat center center;      
+      background: url('../images/weibo_hover.jpg') no-repeat center center;      
     }
     background-repeat: no-repeat;
     float: left;
-    height: 22px;
-    width: 23px;
+    height: 32px;
+    width: 32px;
     padding: 0 5px;
   }
-  .language_select_en a {
-    background: url('../images/Sprachbutton_grau_en.png') no-repeat center center;
+  .renren a {
+    background: url('../images/renren.jpg') no-repeat center center;
     &:hover, &:visited {
-      background: url('../images/Sprachbutton_weiss_en.png') no-repeat center center;      
+      background: url('../images/renren_hover.jpg') no-repeat center center;      
     }
     float: left;
-    height: 22px;
-    width: 23px;
+    height: 32px;
+    width: 32px;
     padding: 0 5px;
   }
 }
@@ -170,29 +169,43 @@ body .custom-prepend-15 {
 }
 
 #frontpage_pane_mobile {
+  background-color:white !important;
   background: url('http://www.coresystems.ch/wp-content/uploads/pic/9593_eCommerce_go_small_314px.jpg') no-repeat center center; 
 }
 
 #frontpage_pane_country_package {
+  background-color:white !important;
   background: url('http://www.coresystems.ch/wp-content/uploads/pic/1453_coresuite_country_pack_Search_480px.jpg') no-repeat 4px 20px;
   background-size: 320px; 
 }
 
 #frontpage_pane_cube {
+  background-color:white !important;
   background: url('http://www.coresystems.ch/wp-content/uploads/pic/3751_coresuite_cube_Auswertungen_480px.jpg') no-repeat 4px 20px; 
   background-size: 320px;
 }
 
 #frontpage_pane_integration {
+  background-color:white !important;
   background: url('http://www.coresystems.ch/wp-content/uploads/pic/3846_01_Visuals_Subsidiary_314px_en.jpg') no-repeat 4px 20px; 
   background-size: 320px;
 }
 
 #frontpage_pane_mobility {
+  background-color:white !important;
   background: url('http://www.coresystems.ch/wp-content/uploads/pic/7606_Consulting_3_Bilder2.jpg') no-repeat 4px 20px; 
   background-size: 320px;
 }
 
+#frontpage_customer_logo{
+  margin: 20px 0px 40px 0px;
+  a{
+  text-decoration: none;
+  color:black;
+
+  &:hover{color:blue;}
+  }
+}
 
 .css-panes > div {
   background: url('http://placehold.it/320x320') no-repeat center center;
@@ -286,21 +299,31 @@ body .custom-prepend-15 {
   }
 }
 
+
+
 .last_section {
   margin-bottom: 10px;
 }
 
 #on_demand {
   .span-3 {
+    margin-left: 1.8em;
     max-height: 80px;
     overflow: hidden;
     
   }
   .span-24 {
-    @include prepend-top;
+    margin-top:0.6em;
   }
-  b {
+  h4 {
+    font-size: 1.6em;
+    font-weight: 700;
     color: #06C;
+    margin-bottom:0.25em;
+  }
+  h3{
+    font-size: 1.6em;
+    font-weight: 700;
   }
 }
 
@@ -318,8 +341,15 @@ body .custom-prepend-15 {
       margin-right: 7px;
     }
   }
-  b {
+  h4 {
+    font-size: 1.6em;
+    font-weight: 700;
     color: #06C;
+    margin-bottom:0.25em;
+  }
+  h3{
+    font-size: 1.6em;
+    font-weight: 700;
   }
 }
 
@@ -355,6 +385,51 @@ body .custom-prepend-15 {
   text-decoration: none;
 }
 
+/**-----------------------------------**/
+/**---------- COMPANY ----------------**/
+/**-----------------------------------**/
 
+.employee{
+  @include prepend(1);
+  @include column(8);
+
+  h3{
+    color: #0066CC;
+    font-size: 1.2em;
+    margin:0.5em 0 0 0em;}
+
+
+  p{
+    @include column(8);
+    margin:0 0 0.8em 0em;}
+}
+
+
+#service_customers_quotes, #china_office, #success_story, #company_overview,{ 
+  h3, h2, p{
+    a{
+    text-decoration: none;
+    color:black;
+
+    &:hover{color:blue;}
+    }
+  }
+}
+
+#on_demand .span-11{
+  margin:.5em 1em .5em 2em;
+}
+
+#product_topic #product_description p{
+  font-size:1.2em;
+}
+
+#ecommerce, #map{
+  margin-top: 4em;
+}
+
+#ecommerce .span-3{
+  
+}
 
 
