@@ -1151,35 +1151,62 @@ body .custom-prepend-15 {
 #mini_menu_bar {
   font-size: 85%;
 }
+/* line 95, ../sass/screen.scss */
+#mini_menu_bar.company #link_company {
+  color: #ddd;
+}
+/* line 100, ../sass/screen.scss */
+#mini_menu_bar.products #link_products {
+  color: #ddd;
+}
+/* line 105, ../sass/screen.scss */
+#mini_menu_bar.service #link_service {
+  color: #ddd;
+}
+/* line 110, ../sass/screen.scss */
+#mini_menu_bar.partner #link_partner {
+  color: #ddd;
+}
+/* line 114, ../sass/screen.scss */
+#mini_menu_bar #link_store {
+  background-color: #276DBC;
+  color: #fff;
+  padding: 18px 8px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  position: relative;
+  top: -15px;
+}
 
-/* line 96, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 #mini_menu_bar ul, #mini_menu_bar ul li {
   float: left;
   list-style-type: none;
 }
 
-/* line 101, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #mini_menu_bar ul li {
   margin-left: 20px;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 #mini_menu_bar li a {
   padding: 2px 0;
   display: block;
   text-decoration: none;
 }
-/* line 109, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 #mini_menu_bar li a:hover, #mini_menu_bar li a:focus {
   color: #bbb;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 #mini_menu_bar li:first-child {
   margin-left: 0;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 #mini_menu_bar:after {
   content: ".";
   display: block;
@@ -1191,22 +1218,22 @@ body .custom-prepend-15 {
 /**-----------------------------------------------**/
 /**- HEADER STUFF AND TOP SECTION (AS FRONTPAGE) -**/
 /**-----------------------------------------------**/
-/* line 130, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 #landing_page_top {
   margin-bottom: 50px;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .top_section {
   background-color: #000;
   color: #fff;
 }
-/* line 137, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .top_section #header {
   padding: 15px 0 20px;
   vertical-align: middle;
 }
-/* line 141, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .top_section .weibo a {
   background: url("../images/weibo.jpg") no-repeat center center;
   background-repeat: no-repeat;
@@ -1215,11 +1242,11 @@ body .custom-prepend-15 {
   width: 32px;
   padding: 0 5px;
 }
-/* line 143, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .top_section .weibo a:hover, .top_section .weibo a:visited {
   background: url("../images/weibo_hover.jpg") no-repeat center center;
 }
-/* line 152, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .top_section .renren a {
   background: url("../images/renren.jpg") no-repeat center center;
   float: left;
@@ -1227,74 +1254,74 @@ body .custom-prepend-15 {
   width: 32px;
   padding: 0 5px;
 }
-/* line 154, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .top_section .renren a:hover, .top_section .renren a:visited {
   background: url("../images/renren_hover.jpg") no-repeat center center;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 #frontpage_picture_frame {
   padding: 10px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #frontpage_picture_frame img {
   width: 950px;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #frontpage_pane_mobile {
   background-color: white !important;
   background: url("http://www.coresystems.ch/wp-content/uploads/pic/9593_eCommerce_go_small_314px.jpg") no-repeat center center;
 }
 
-/* line 176, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #frontpage_pane_country_package {
   background-color: white !important;
   background: url("http://www.coresystems.ch/wp-content/uploads/pic/1453_coresuite_country_pack_Search_480px.jpg") no-repeat 4px 20px;
   background-size: 320px;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 #frontpage_pane_cube {
   background-color: white !important;
   background: url("http://www.coresystems.ch/wp-content/uploads/pic/3751_coresuite_cube_Auswertungen_480px.jpg") no-repeat 4px 20px;
   background-size: 320px;
 }
 
-/* line 188, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 #frontpage_pane_integration {
   background-color: white !important;
   background: url("http://www.coresystems.ch/wp-content/uploads/pic/3846_01_Visuals_Subsidiary_314px_en.jpg") no-repeat 4px 20px;
   background-size: 320px;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #frontpage_pane_mobility {
   background-color: white !important;
   background: url("http://www.coresystems.ch/wp-content/uploads/pic/7606_Consulting_3_Bilder2.jpg") no-repeat 4px 20px;
   background-size: 320px;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #frontpage_customer_logo {
   margin: 20px 0px 40px 0px;
 }
-/* line 202, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #frontpage_customer_logo a {
   text-decoration: none;
   color: black;
 }
-/* line 206, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 #frontpage_customer_logo a:hover {
   color: blue;
 }
 
-/* line 210, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .css-panes > div {
   background: url("http://placehold.it/320x320") no-repeat center center;
 }
 
-/* line 214, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .top_section:after {
   background: url("../images/frontpage_top_section_bottom_bar.png") repeat-x;
   height: 53px;
@@ -1303,19 +1330,19 @@ body .custom-prepend-15 {
   border-bottom: 10px solid #fff;
 }
 
-/* line 222, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .top_section {
   background-color: #000;
   color: #fff;
 }
 
-/* line 226, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .top_section #header {
   padding: 15px 0 20px;
   vertical-align: middle;
 }
 
-/* line 230, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .top_section .language_select_de a {
   background: url("../images/Sprachbutton_grau_de.png") no-repeat center center;
   background-repeat: no-repeat;
@@ -1325,12 +1352,12 @@ body .custom-prepend-15 {
   padding: 0 5px;
 }
 
-/* line 238, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .top_section .language_select_de a:hover, .top_section .language_select_de a:visited {
   background: url("../images/Sprachbutton_weiss_de.png") no-repeat center center;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .top_section .language_select_en a {
   background: url("../images/Sprachbutton_grau_en.png") no-repeat center center;
   float: left;
@@ -1339,18 +1366,18 @@ body .custom-prepend-15 {
   padding: 0 5px;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .top_section .language_select_en a:hover, .top_section .language_select_en a:visited {
   background: url("../images/Sprachbutton_weiss_en.png") no-repeat center center;
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .top_section #frontpage_news {
   font-size: 90%;
   margin-left: 20px;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 #product_top_section {
   margin: 10px 0 20px;
   background: url("../images/productpage_top2.jpg") no-repeat center center;
@@ -1361,7 +1388,7 @@ body .custom-prepend-15 {
 /**-----------------------------------**/
 /**------------- CONTENT -------------**/
 /**-----------------------------------**/
-/* line 267, ../sass/screen.scss */
+/* line 297, ../sass/screen.scss */
 #frontpage_content:after {
   content: ".";
   display: block;
@@ -1371,24 +1398,24 @@ body .custom-prepend-15 {
   margin-bottom: 20px;
 }
 
-/* line 277, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 .white_section {
   margin-bottom: 30px;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .grey_section {
   background-color: #eceffd;
   background-color: #e7e7e8;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e7e7e8), color-stop(1, #eceffd)) !important;
   background: -moz-linear-gradient(center top, #e7e7e8 0%, #eceffd 100%) !important;
 }
-/* line 286, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .grey_section .container {
   margin-bottom: 30px;
 }
 
-/* line 291, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .grey_section:before, .grey_section:after {
   height: 1px;
   display: block;
@@ -1396,61 +1423,61 @@ body .custom-prepend-15 {
   background-color: #4b80c1;
   margin-bottom: 30px;
 }
-/* line 297, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .grey_section:before .last_section, .grey_section:after .last_section {
   background-color: inherent;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 334, ../sass/screen.scss */
 .last_section {
   margin-bottom: 10px;
 }
 
-/* line 309, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 #on_demand .span-3 {
   margin-left: 1.8em;
   max-height: 80px;
   overflow: hidden;
 }
-/* line 315, ../sass/screen.scss */
+/* line 345, ../sass/screen.scss */
 #on_demand .span-24 {
   margin-top: 0.6em;
 }
-/* line 318, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 #on_demand h4 {
   font-size: 1.6em;
   font-weight: 700;
   color: #06C;
   margin-bottom: 0.25em;
 }
-/* line 324, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 #on_demand h3 {
   font-size: 1.6em;
   font-weight: 700;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 #on_premise .span-4 img {
   width: 150px;
 }
-/* line 336, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 #on_premise .span-18 {
   margin-top: 1.5em;
 }
-/* line 338, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 #on_premise .span-18 img {
   height: 30px;
   float: left;
   margin-right: 7px;
 }
-/* line 344, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 #on_premise h4 {
   font-size: 1.6em;
   font-weight: 700;
   color: #06C;
   margin-bottom: 0.25em;
 }
-/* line 350, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 #on_premise h3 {
   font-size: 1.6em;
   font-weight: 700;
@@ -1459,7 +1486,7 @@ body .custom-prepend-15 {
 /**-----------------------------------**/
 /**---------- FOOTER STUFF -----------**/
 /**-----------------------------------**/
-/* line 360, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 #footer:before {
   background: url("../images/footer_section_top_bar.png") repeat-x;
   height: 53px;
@@ -1467,26 +1494,26 @@ body .custom-prepend-15 {
   content: "";
 }
 
-/* line 367, ../sass/screen.scss */
+/* line 397, ../sass/screen.scss */
 #footer {
   width: 100%;
   background-color: #000;
   color: #fff;
 }
-/* line 371, ../sass/screen.scss */
+/* line 401, ../sass/screen.scss */
 #footer #footer_content {
   border-bottom: 5px solid #000;
   font-size: 85%;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 #footer ul, #footer ul li {
   list-style-type: none;
   float: left;
   padding-left: 0;
 }
 
-/* line 383, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 #footer li a {
   padding: 2px 5px;
   text-decoration: none;
@@ -1495,7 +1522,7 @@ body .custom-prepend-15 {
 /**-----------------------------------**/
 /**---------- COMPANY ----------------**/
 /**-----------------------------------**/
-/* line 392, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .employee {
   padding-left: 40px;
   display: inline;
@@ -1507,13 +1534,13 @@ body .custom-prepend-15 {
 * html .employee {
   overflow-x: hidden;
 }
-/* line 396, ../sass/screen.scss */
+/* line 426, ../sass/screen.scss */
 .employee h3 {
   color: #0066CC;
   font-size: 1.2em;
   margin: 0.5em 0 0 0em;
 }
-/* line 402, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .employee p {
   display: inline;
   float: left;
@@ -1526,27 +1553,32 @@ body .custom-prepend-15 {
   overflow-x: hidden;
 }
 
-/* line 410, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 #service_customers_quotes h3 a, #service_customers_quotes h2 a, #service_customers_quotes p a, #china_office h3 a, #china_office h2 a, #china_office p a, #success_story h3 a, #success_story h2 a, #success_story p a, #company_overview h3 a, #company_overview h2 a, #company_overview p a {
   text-decoration: none;
   color: black;
 }
-/* line 414, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 #service_customers_quotes h3 a:hover, #service_customers_quotes h2 a:hover, #service_customers_quotes p a:hover, #china_office h3 a:hover, #china_office h2 a:hover, #china_office p a:hover, #success_story h3 a:hover, #success_story h2 a:hover, #success_story p a:hover, #company_overview h3 a:hover, #company_overview h2 a:hover, #company_overview p a:hover {
   color: blue;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 449, ../sass/screen.scss */
 #on_demand .span-11 {
   margin: .5em 1em .5em 2em;
 }
 
-/* line 423, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 #product_topic #product_description p {
   font-size: 1.2em;
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 #ecommerce, #map {
   margin-top: 4em;
+}
+
+/* line 465, ../sass/screen.scss */
+#coresystems_overview {
+  font-size: 1.2em;
 }

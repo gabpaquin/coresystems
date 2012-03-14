@@ -91,6 +91,36 @@ body .custom-prepend-15 {
 
 #mini_menu_bar {
   font-size: 85%;
+  &.company {
+    #link_company {
+      color: #ddd;
+    }
+  }
+  &.products {
+    #link_products {
+      color: #ddd;
+    }
+  }
+  &.service {
+    #link_service {
+      color: #ddd;
+    }
+  }
+  &.partner {
+    #link_partner {
+      color: #ddd;
+    }
+  }
+  #link_store {
+    background-color: #276DBC;
+    color: #fff;
+    padding: 18px 8px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    position: relative;
+    top: -15px;
+  }
 }
 
 #mini_menu_bar ul, #mini_menu_bar ul li {
@@ -432,4 +462,7 @@ body .custom-prepend-15 {
   
 }
 
+#coresystems_overview{
+  font-size:1.2em;
+}
 
