@@ -1,0 +1,57 @@
+/*
+Syntax error: File to import not found or unreadable: blueprint/reset.
+              Load paths:
+                .
+                /Users/gabriel/Projects/project_locomotive/coresystems/public/sass
+        on line 2 of /Users/gabriel/Projects/project_locomotive/coresystems/public/sass/screen.scss
+
+1: // This import applies a global reset to any page that imports this stylesheet.
+2: @import "blueprint/reset";
+3: @import "blueprint";
+4: 
+5: body {
+6: 	@include blueprint;
+7:   font:14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+
+Backtrace:
+/Users/gabriel/Projects/project_locomotive/coresystems/public/sass/screen.scss:2
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/import_node.rb:42:in `import'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/import_node.rb:25:in `imported_file'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:148:in `rescue in visit_import'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:153:in `visit_import'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/tree/root_node.rb:20:in `render'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/engine.rb:291:in `_render'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/engine.rb:238:in `render'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin/compiler.rb:319:in `update_stylesheet'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin/compiler.rb:181:in `block (2 levels) in update_stylesheets'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin/compiler.rb:175:in `each'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin/compiler.rb:175:in `block in update_stylesheets'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin/compiler.rb:173:in `each'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin/compiler.rb:173:in `update_stylesheets'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/exec.rb:397:in `watch_or_update'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/exec.rb:294:in `process_result'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/exec.rb:41:in `parse'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/lib/sass/exec.rb:21:in `parse!'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/gems/sass-3.1.2/bin/sass:8:in `<top (required)>'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/bin/sass:19:in `load'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@loco/bin/sass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: blueprint/reset.\A               Load paths:\A                 .\A                 /Users/gabriel/Projects/project_locomotive/coresystems/public/sass\A         on line 2 of /Users/gabriel/Projects/project_locomotive/coresystems/public/sass/screen.scss\A \A 1: // This import applies a global reset to any page that imports this stylesheet.\A 2: @import \"blueprint/reset\";\A 3: @import \"blueprint\";\A 4: \A 5: body {\A 6: 	@include blueprint;\A 7:   font:14px \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;"; }

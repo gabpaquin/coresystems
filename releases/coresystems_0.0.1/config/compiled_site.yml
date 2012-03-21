@@ -1,0 +1,140 @@
+site:
+  locale: en
+  meta_description: some meta description
+  meta_keywords: some meta keywords
+  name: webage
+  seo_title: coresystems
+  pages:
+  - index:
+      cache_strategy: none
+      published: true
+      title: Home page
+      listed: true
+  - china_team:
+      cache_strategy: none
+      published: true
+      title: China team
+      listed: true
+      editable_elements:
+      - block: content
+        slug: china team
+        content: ''
+  - company:
+      cache_strategy: none
+      published: true
+      title: Company
+      listed: true
+      editable_elements:
+      - block: content
+        slug: coresystems global
+        content: ''
+      - block: content
+        slug: coresystems description
+        content: ''
+      - block: content
+        slug: coresystems shanghai
+        content: ''
+      - block: content
+        slug: coresystems shanghai description
+        content: ''
+      - block: content
+        slug: sucess stories
+        content: ''
+      - block: content
+        slug: sucess stories description
+        content: ''
+  - partner:
+      cache_strategy: none
+      published: true
+      title: Partner
+      listed: true
+      editable_elements:
+      - block: content
+        slug: Devices
+        content: ''
+  - products:
+      cache_strategy: none
+      published: true
+      title: Products
+      listed: true
+  - service:
+      cache_strategy: none
+      published: true
+      title: Service
+      listed: true
+      editable_elements:
+      - block: content
+        slug: Devices
+        content: ''
+  - starter_guide:
+      cache_strategy: none
+      published: true
+      title: Starter guide
+      listed: true
+  - success_story:
+      cache_strategy: none
+      published: true
+      title: Success story
+      listed: true
+      editable_elements:
+      - block: content
+        slug: sucess story
+        content: ''
+  - company_overview:
+      cache_strategy: none
+      published: true
+      title: Company overview
+      listed: true
+      editable_elements:
+      - block: content
+        slug: company description
+        content: ''
+  - download_area:
+      cache_strategy: none
+      published: true
+      title: Download area
+      listed: true
+  - mobile_solution:
+      cache_strategy: none
+      published: true
+      title: Mobile solution
+      listed: true
+      editable_elements:
+      - block: content
+        slug: service_text
+        content: ''
+  - '404':
+      cache_strategy: none
+      published: true
+      title: Page not found
+      listed: true
+  content_types:
+    newsfeed:
+      description: news feed for the front page
+      name: newsfeed
+      order_by: created_at
+      order_direction: asc
+      slug: newsfeed
+      highlighted_field_name: news
+      fields:
+      - news:
+          required: true
+          label: news
+          kind: text
+      contents:
+      - <p>this is the newsfeed for coresystems china</p>: {}
+      - <p>this is the second news for coresystems front page</p>: {}
+    slide_images:
+      name: slide_images
+      order_by: created_at
+      order_direction: asc
+      slug: slide_images
+      highlighted_field_name: image
+      fields:
+      - image:
+          kind: file
+          label: image
+          required: true
+      - banner:
+          label: banner
+          kind: text

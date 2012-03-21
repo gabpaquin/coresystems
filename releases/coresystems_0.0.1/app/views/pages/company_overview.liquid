@@ -1,0 +1,63 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %} 
+{% block content %}
+  <div id="company_overview" class="white_section">  
+    <div class="container">
+      <div class="span-14 prepend-1">
+        <img src="{{ 'company_overview.jpg' | theme_image_url }}" style="max-width:500px">
+      </div>
+      <div class="span-9 last">
+        {% editable_short_text 'vision' %}<h3>我们的愿景</h3>{% endeditable_short_text%}
+			    {% editable_long_text 'vision description' %}
+          <p>
+          成为商务应用程序的头号供应商
+          </p>  
+			    {% endeditable_long_text %} 
+          {% editable_short_text 'mision' %}<h3>我们的使命</h3>{% endeditable_short_text%}
+          {% editable_long_text 'mission description' %}
+          <p>
+          年轻人们共同开发卓越的创新产品。<br>
+          成为“云计算”方面的先驱。<br>
+          向分公司、子公司推广国际化ERP（企业资源管理）。<br>
+          </p>  
+          {% endeditable_long_text %} 
+          {% editable_short_text 'mision' %}<h3>我们的价值</h3>{% endeditable_short_text%}
+          {% editable_long_text 'values description' %}
+          <p>
+          可信赖的承诺<br>
+          众多专门技术<br>
+          全球支援中心<br>
+          </p>  
+          {% endeditable_long_text %} 
+        </div>
+    
+      <div class="sidemap_line span-24 last">
+      </div>
+      <div id="coresystems_overview" class="span-22 bottom-append prepend-1 append-1 prepend-top last">
+        <h3>全球据点!</h3>
+        <p>
+        coresystems ag成立于2002年，总部设在瑞士苏黎世边上的 Windisch。随着稳定的业务增长，coresystems 陆续在布赖斯高的弗赖堡、伦敦、纽约市和上海设立了办事处。此外，公司不仅在戈尔韦郡和哥本哈根设立了支持中心，还在克卢日-纳波卡（Cluj-Napoca）设立了开发中心。  
+        </p>   
+        <p>
+        coresuite产品系列由全球合格的SAP合作商负责分销，客户群囊括了数千家工业和服务业内不同领域的大中小企业。
+        </p>  
+      </div>
+      <div class="sidemap_line span-24 last">
+      </div>
+      <div class="span-3 prepend-top prepend-1">
+        <img src="{{ 'ceo_manuel.png' | theme_image_url }}" style="max-width:200px">
+      </div>
+      <div id="coresystems_overview" class="span-18 bottom-append prepend-1 prepend-top last">
+         <p>
+          «我们开发的解决方案主要面向中小型企业，而我们自身也是一个中型公司。因此，我们的目标就是凭借创新的云端和移动解决方案，树立市场的新标准。对于我们而言，真正地为客户创造附加值，提供合理的定价，与解决方案的简单安装和轻松使用同等重要。为此，我们采用了尖端技术，并与公认标准实现了完美结合。»
+           <br> 
+          <span style="float:right; display:block">Manuel Grenacher（曼纽）, CEO, coresystems ag</span>
+        </p>
+      </div>
+
+    </div> 
+  </div>  
+  {% include 'footer' %}
+{% endblock %}  

@@ -1,0 +1,24 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %} 
+{% block content %}
+  <div class="container">
+    {% include 'menu' %} 
+  </div>
+  <div id="service_structure" class="white_section last_section">  
+    <div class="container">
+      <div class="span-24 prepend-1 last">
+        <img src="{{ 'service_overview_structure.jpg' | theme_image_url }}">      
+      </div>
+      <div class="span-24 prepend-1 last">
+        {% editable_long_text 'service_text' %}
+          {% include 'content1' %}
+        {% endeditable_long_text %}         
+      </div>
+    </div>    
+  </div>  
+  <div class="container">
+    {% include 'footer' %}
+  </div>
+{% endblock %}  

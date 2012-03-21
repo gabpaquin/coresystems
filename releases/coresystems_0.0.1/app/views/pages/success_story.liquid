@@ -1,0 +1,83 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %}  
+{% block content %}
+  <div id="success_story" class="white_section section_blue_line">  
+    <div class="container">
+      <div class="span-24 last">
+        <h3>
+        {% editable_short_text 'sucess story header' %}
+           成功案例
+        {% endeditable_short_text%}
+        </h3>
+        <div class="sidemap_line span-24 last">
+        </div>
+        <h2>
+        {% editable_short_text 'sucess story 1 title' %}
+          机械制造业——博瑞达Bruderer SAP Business One实施成功案例
+        {% endeditable_short_text%}
+        </h2>
+        <div class="span-11 append-1">  
+        {% editable_long_text 'sucess story 1 part 1' %}
+          <img src="{{ 'burderer.png' | theme_image_url }}" style="max-height: 2em; margin-bottom:1em">
+          <p>
+            作为一个冲压领域的全球技术合作伙伴，博瑞达机械是一个以最高的水平提供一站式全面的支持和以市场为导向的解决方案－确保最高的生产率。
+            在许多行业－例如汽车行业及其供应商，计算机行业和电子行业－主要公司都在 BRUDERER 品牌的精度优势获得盈利。
+          </p>
+          <img src="{{ 'bruderer2.png' | theme_image_url }}" style="max-height: 13em; margin-left: 8em;">
+        {% endeditable_long_text %}
+        </div>
+        <div class="span-11 append-1 last">  
+        {% editable_long_text 'sucess story 1 part 2' %}
+          <p>
+            <span style="font-weight:700; clear:both; display:block; font-size:1.2em; margin-bottom:1em">鹤鸣软件上海为客户提供的服务</span>
+            随着博瑞达机械在亚洲的快速发展，博瑞达亟需在销售以及售后服务的务上统一各个子公司的业务流程，发挥出集团管理优势。鹤鸣软件凭借自身丰富的国际项目实施经验和国际化公司的背景，取得了客户的信任。鹤鸣软件派出高水平的咨询顾问，与博瑞达总部CFO充分沟通，相互协作，面对重重挑战，解决了一个又一个难题，使得博瑞达的ERP策略得以在亚洲顺利贯彻执行，完成了博瑞达司的战略构想。
+
+            博瑞达集团的ERP项目在亚洲由鹤鸣软件全权负责，包括中国，新加坡，以及计划中的印度分部。在项目中鹤鸣软件的团队主要的亮点为：
+
+            - 实现物料单(BOM)在6个国家的7个SBO数据库的同步
+            - 实现跨国的分部之间的库存数据共享
+            - 实现跨国的分部之间的公司间交易
+            - 实现在SBO中的库位管理
+            - 实现库存盘点的优化及自动化
+          </p>
+        {% endeditable_long_text %}
+        </div> 
+        <div class="sidemap_line span-24 last">
+        </div>     
+        <h2>
+        {% editable_short_text 'sucess story 2 title' %}
+          成功案例-劳伦斯 Lorentz
+        {% endeditable_short_text%}
+        </h2> 
+        {% editable_long_text 'sucess story 2' %}
+        <img src="{{ 'Lorentz.png' | theme_image_url }}" style="max-height: 2em; margin-bottom:1em">
+        <p>
+          劳伦斯泵业机械专业从事太阳能水泵系统，太阳能跟踪系统和光伏组件以及所有相关的液压和电子元件，是该领域的领先制造商之一。劳伦斯于1993年在德国汉堡成立，目前拥有员工150余人，分布在100多个国家。他们与当地的合作伙伴、客户保持密切联系，以保证专业地支持、安装和维护。
+          2011年，劳伦斯选择了SAP Business One（以下简称B1）作为公司的信息化解决方案，由于对coresystems 的实施方案和增强模块coresuite充满信心，劳伦斯选择了coresystems作为其B1的实施方。实施范围包括采购、销售、库存、生产、物料需求计划和财务。由于企业的特殊性，我们巧妙地运用了库存模块下的收发货来模拟生产，来实现成本管理。通过B1的应用将人、财、物、供、产、销有效结合、全面受控、实时反馈、以销定产、以产求供，提高生产效率、降低成本，减少库存，加快资金周转，进而使企业管理更加精细，市场反应更加敏捷。它把客户需求和企业内部的制造情况，以及供应商资源整合在一起，将企业的各种资源充分调配和平衡，使采购、销售、财务、制造等各个分散、孤立的部门通过电脑连接到一起，实现整个企业信息的集成。由于企业高层管理的强力支持，企业业务部门的积极参与，项目资源充分、优秀的团队工作和通力协作，合理的期望和明确的项目目标，充分的用户培训，劳伦斯项目已成功上线。
+        </p>
+        {% endeditable_long_text %}    
+        <div class="sidemap_line span-24 last">
+        </div>   
+        <h2>
+        {% editable_short_text 'more happy customer' %}
+          更开心的客户!
+        {% endeditable_short_text%}
+        </h2>
+          <img src="{{ 'WK_Logo.jpg' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+          <img src="{{ 'Keune_Logo.jpg' | theme_image_url }}" style="max-height: 40px; margin-right: 20px;">
+          <img src="{{ 'Lorentz.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+          <img src="{{ 'burderer.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+          <img src="{{ 'Bikes_Logo.png' | theme_image_url }}" style="max-height: 40px; margin-right: 20px; ">
+          <img src="{{ 'empr.png' | theme_image_url }}" style="max-height: 40px; margin: 20px 20px 0 0;">
+          <img src="{{ 'proceq.png' | theme_image_url }}" style="max-height: 40px; margin: 20px 20px 0 0;">
+          <img src="{{ 'vesuvius.png' | theme_image_url }}" style="max-height: 60px; margin: 20px 20px 0 0;">
+          <img src="{{ 'service_customer1.png' | theme_image_url }}" style="max-height: 30px; margin: 20px 20px 0 0;">
+          <img src="{{ 'service_customer2.png' | theme_image_url }}" style="max-height: 60px; margin: 20px 20px 0 0;">
+          <img src="{{ 'service_customer3.png' | theme_image_url }}" style="max-height: 40px; margin: 20px 20px 0 0;">
+      </div>
+    </div>  
+  </div> 
+{% include 'footer' %}
+{% endblock %} 

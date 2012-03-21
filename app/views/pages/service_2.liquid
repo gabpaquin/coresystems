@@ -1,0 +1,168 @@
+{% extends parent %}
+{% block top_section %}
+  {% include 'top_section_mini' %}
+{% endblock %} 
+{% block content %}
+  <div id="services" class="white_section last_section">  
+    <div class="container">
+        <div id="service_intro" class="span-24">
+          <div class="span-6 ">
+              <img src="{{ 'Miwen_Lu_small.jpg' | theme_image_url }}" class="picturestyle1" style="max-width: 280px;">
+          </div>
+          <div class="span-17 last">
+            <h3>
+              {% editable_short_text 'service' %}
+                顾问服务
+              {% endeditable_short_text %}
+            </h3>                    
+            <p >  
+              {% editable_long_text 'service description' %}
+              我们采用最尖端的技术，如“云计算”和“移动计算”。借助统包标准解决方案，您的业务流程将实现最优化。经济学家和IT专家们对每一项目都全力以赴，满怀激情。此外，我们更有350个联盟伙伴，一起为国际项目提供最有力的支持。
+              {% endeditable_long_text %}
+            </p> 
+            <span> - 卢旻雯, 亚太顾问总监/合作伙伴</span>
+          </div>  
+        </div>  
+        <div class="sidemap_line span-24 last">
+        </div> 
+        <div class="span-24">
+          <div class="span-12 append-bottom">
+            <h3>
+              <img src="{{ 'coreystems_logo_small.png' | theme_image_url }}">
+              {% editable_short_text 'integration' %}
+                集成
+              {% endeditable_short_text %}
+            </h3>  
+            <p class="service_description">
+              {% editable_short_text 'integration description' %}
+                (B1i &amp; BNI) 为大客户字公司合提供业服务
+              {% endeditable_short_text %}
+            </p>                    
+            <p class="service_info">  
+              {% editable_long_text 'integration description' %}
+                <span>➢</span> 高品质统一的数据质量<br>
+                <span>➢</span> 符合国家特定标准<br>
+                <span>➢</span> 数周一次的产品介绍<br>
+                <span>➢</span> 内部数据的优越性
+              {% endeditable_long_text %}
+            </p>            
+          </div>
+          <div class="span-12 append-bottom last">
+            <img src="{{ 'service_overview_picture1.jpg' | theme_image_url }}" style="max-width: 430px; margin-top:8em"> 
+          </div>  
+        </div>
+        <div class="sidemap_line span-24 last">
+        </div>
+          <div class="span-12 append-bottom last">
+            <h3>
+              <img src="{{ 'coreystems_logo_small.png' | theme_image_url }}">
+              {% editable_short_text 'mobility' %}
+                移动性
+              {% endeditable_short_text %}
+            </h3>                           
+            <p class="service_info">  
+              {% editable_long_text 'mobility description' %}
+                <span>➢</span> 优质的现场服务<br>
+                <span>➢</span> 良好的成本收益率<br>
+                <span>➢</span> 高水平的可扩展性<br>
+                <span>➢</span> 数天一次的产品介绍<br>
+                <span>➢</span> 最新的安全标准<br>
+                <span>➢</span> 完善的脱机功能
+              {% endeditable_long_text %}
+            </p>  
+          </div>
+          <div class="span-12 append-bottom last">
+            <img src="{{ 'service_overview_picture2.png' | theme_image_url }}" style="max-width: 430px; margin-top:4em"> 
+          </div>
+        <div class="sidemap_line span-24 last">
+        </div>
+
+       <div class="span-14 append-1 ">
+          <h3>
+            <img src="{{ 'coreystems_logo_small.png' | theme_image_url }}">
+            {% editable_short_text 'shanghai info' %}
+              定制软件
+            {% endeditable_short_text %}
+          </h3>  
+          <p class="service_description">
+            {% editable_short_text 'shanghai info description' %}
+              软件开发
+            {% endeditable_short_text %}
+          </p>        
+          {% editable_long_text 'china service' %}
+          <p class="service_info">        
+            鹤鸣软件拥有自己强大的开发团队，并将长久累积关于ERP开发的专业知识带来了中国。我们将coresuite产品依据中国环境要求做了本地化调整，未来将会为了亚洲市场研发更多的产品。为了成功的集成，还有满足政府的法规，我们深信本地化是非常重要的必经路程。如果您是在寻找深度定制化的软件以及特定的功能，我们就是您正在寻找的团队！
+            <span style="margin-top:20px; float: right; display:block; color:black">- Marco Schweighauser, 上海研发团队负责人</span>
+          </p> 
+          {% endeditable_long_text %}  
+        </div>
+        <div class="span-8 last">
+            <img src="{{ 'Marco_Schweighauser_small.jpg' | theme_image_url }}" class="picturestyle1" style="max-width: 280px; margin-top:8em">
+        </div>
+
+        <div class="sidemap_line span-24 last">
+        </div>                
+        <div id="service_customers_quotes" class="span-22 custom-prepend-15 prepend-top append-bottom last">
+            {% editable_short_text 'customers' %}
+             <h2 style="text-align:center"><a href="/success_story">来自客户的声音...</a></h2>
+            {% endeditable_short_text %}          
+          <div class="span-24 last prepend-top">   
+            <div class="span-7">         
+              <img src="{{ 'service_customer1.png' | theme_image_url }}" style="margin-right:5em; max-height: 30px;"> 
+            </div>
+            <div class="span-15">
+              <blockquote>
+                <span class="bqstart1">“</span>
+                {% editable_long_text 'customer 1' %}            
+                <p>
+                  Coresuite的产品大大减少了系统对内存的需求,
+                  让我们的编程变得简易，提高了的工作效率
+                  <span style="margin-top:10px; float: right; display:block; color:black">- Endress+Hauser IT 部门</span>
+                </p>            
+                {% endeditable_long_text %}
+                <span class="bqend1">”</span>
+              </blockquote>
+            </div>
+          </div> 
+
+          <div class="span-24 last prepend-top">  
+            <div class="span-7">
+              <img src="{{ 'service_customer2.png' | theme_image_url }}" style="margin-right:5em; max-height: 60px; margin-bottom:30px" >
+            </div>
+            <div class="span-15">
+              <blockquote>
+                <span class="bqstart2">“</span>
+                {% editable_long_text 'customer 2' %}
+                <p>
+                  我真希望coresuite的产品也可以用于SAP R/3
+                  <span style="margin-top:10px; float: right; display:block; color:black">- Gerhard Meyer, CTO, Carl Schlenk AG</span>                
+                </p>
+                {% endeditable_long_text %}
+                <span class="bqend2">”</span>
+              </blockquote>
+            </div>
+          </div>   
+
+          <div class="span-24 last prepend-top">   
+            <div class="span-7">
+              <img src="{{ 'service_customer3.png' | theme_image_url }}" style="margin-right:5em; max-height: 35px;"> 
+            </div>
+            <div class="span-15">              
+              <blockquote>
+                <span class="bqstart3">“</span>
+                {% editable_long_text 'customer 3' %}
+                <p>
+                  鹤鸣软件让我们感受到了一个追求质量，追求完美，提供优质服务的IT 公司以及一站式的IT解决方案
+                  <span style="margin-top:10px; float: right; display:block; color:black">- Company Kardex Systems AG</span>             
+                </p>
+                {% endeditable_long_text %}
+                <span class="bqend3">”</span>
+              </blockquote>
+            </div>
+          </div>  
+
+      </div> 
+    </div>    
+  </div>  
+  {% include 'footer' %}
+{% endblock %}  

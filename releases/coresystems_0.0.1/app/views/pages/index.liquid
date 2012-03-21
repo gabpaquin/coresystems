@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  
+  <!-- Include jQuery first -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+	{% inline_editor %}		 
+	
+    {{ 'coin-slider.js' | javascript_tag }}
+    {{ 'jquery.tools.min.js' | javascript_tag }}
+    {{ 'jquery.vticker.js' | javascript_tag }}
+
+	
+  <script type="text/javascript">
+  	$(document).ready(function() {
+      $('#coin-slider').coinslider({ 
+        width: 950, 
+        height: 430,
+        navigation: false, 
+        delay: 5000 
+      });
+  		$("ul.css-tabs").tabs("div.css-panes > div");
+      $('#frontpage_news').vTicker({
+        speed: 500,
+        pause: 3000,
+        showItems: 2,
+        animation: 'fade',
+        mousePause: false,
+        height: 0,
+        direction: 'up'
+      });
+  	});
+  </script>
+
+    {{ 'screen' | stylesheet_tag }}
+    {{ 'coin-slider-styles' | stylesheet_tag }}
+    {{ 'tabs' | stylesheet_tag }}
+	
+	<!-- typekit code -->
+</head>
+<body class="{{ page.slug }}">
+  {% block top_section %}  
+      <div id="frontpage_top_section" class="top_section" >
+        <div class="container">
+          {% include 'header' %}
+            <div id="landing_page_top">
+              <div id="frontpage_picture_frame" class="span-24 last" style="height: 430px">
+                  <div id="coin-slider" style="height: 430px">
+              {% for new in contents.slide_images%}
+              <div >
+               {{ new.image.url | image_tag}}  
+                <span>{{ new.banner }}</span>
+              </div>
+              {% endfor %}
+            </div>
+              </div>
+            </div>
+            <div class="sidemap_line span-24 last" style="padding: 10px 0px;">
+            </div>
+            <div id="frontpage_news" class="box span-22 prepend-1 last">
+              <ul>
+                {% for new in contents.newsfeed limit:5%}  
+                  <li>{{ new.news }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+        </div>
+      </div>
+  {% endblock %}   
+    
+  {% block content %}
+    <div class="container">
+        <div class="span-24 last">
+          <div class="box span-24 prepend-top last">
+            <h3>关于鹤鸣</h3>
+            coresystems ag成立于2002年，总部设在瑞士苏黎世边上的 Windisch。随着稳定的业务增长，coresystems 陆续在布赖斯高的弗赖堡、伦敦、纽约市和上海设立了办事处。此外，公司不仅在戈尔韦郡和哥本哈根设立了支持中心，还在克卢日-纳波卡（Cluj-Napoca）设立了开发中心。coresuite产品系列由全球合格的SAP合作商负责分销，客户群囊括了数千家工业和服务业内不同领域的大中小企业。 
+          </div>
+
+          <div class="sidemap_line span-24 last">
+          </div> 
+        </div>
+      </div>      
+  <div id="on_demand" class="grey_section">  
+    <div class="container">
+      <div class="span-24 last">
+        <div id="frontpage_content">
+            <div class="span-12">
+              <div class="custom-prepend-15">
+                <h3>主打产品</h3>
+              </div>
+              <ul class="css-tabs">
+              	<li><a href="#">移动应用程序</a></li>
+              	<li><a href="#">国家本地服务包</a></li>
+              	<li><a href="#">cube</a></li>
+              </ul>
+              <div class="css-panes">
+              	<div id="frontpage_pane_mobile">
+              	  <div class="textbox">
+                    管理人员、销售人员和服务代表们都能获得日常工作中以及作出决定（与客户在一起时）所需的正确信息。
+              	  </div>
+              	</div>
+              	<div id="frontpage_pane_country_package">
+              	  <div class="textbox">
+              	   借助coresuite 国家服务包，您可进一步完善财务评价，改变营销文件的讲演方式，以满足您的各项要求。在SAP Business One搜索数据，与使用谷歌搜索互联网一样简单
+              	  </div>
+              	</div>
+              	<div id="frontpage_pane_cube">
+              	  <div class="textbox">
+              	    您无需了解编程知识，只需轻轻点击按钮，即可通过coresuite cube分析数据。您想知道谁是您最好的销售员吗？您想了解您的资金流动变化或库存情况吗? coresuite cube都将为您解答
+              	  </div>
+              	</div>
+              </div>
+            </div>
+            <div class="span-12 last">
+              <div class="custom-prepend-15">
+                <h3>售后服务</h3>
+              </div>
+              <ul class="css-tabs">
+              	<li><a href="#">集成</a></li>
+              	<li><a href="#">流动性</a></li>
+              </ul>
+              <div class="css-panes">
+              	<div id="frontpage_pane_integration">
+              	  <div class="textbox">
+              	    ➢ 高品质统一的数据质量<br>
+                    ➢ 符合国家特定标准<br>
+                    ➢ 数周一次的产品介绍<br>
+                    ➢ 内部数据的优越性
+              	  </div>
+              	</div>
+              	<div id="frontpage_pane_mobility">
+              	  <div class="textbox">
+                    ➢ 优质的现场服务<br>
+                    ➢ 良好的成本收益率<br>
+                    ➢ 高水平的可扩展性<br>
+                    ➢ 数天一次的产品介绍
+              	  </div>
+              	</div>
+              </div>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+          <div class="container">
+            <div class="span-24 last">
+            <div id="frontpage_customer_logo" class="span-20 prepend-2 last">
+              <h3><a style="font-size:1.6" href="/success_story">共同管理全球5000家客户...</a></h3>
+              
+              <img src="{{ 'WK_Logobw.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+              <img src="{{ 'Keune_Logo.jpg' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;">
+              <img src="{{ 'Lorentzbw.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+              <img src="{{ 'burdererbw.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+              <img src="{{ 'Bikes_Logo.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+            </div>
+          </div>  
+      </div>
+  {% include 'footer' %}
+  {% endblock %}
+
+</body>
