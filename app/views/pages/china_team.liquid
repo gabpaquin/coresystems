@@ -38,19 +38,26 @@
           在这里，我要感谢我们员工辛苦的工作。我们珍惜和注重每一位员工的价值和能力。我们愿意与我们的员工、客户一起共同见证和分享这个具有潜力和梦想的公司的成长和发展!
         </p>
         {% endeditable_long_text %}
-      </div>
-
-      <div class="span-22 prepend-top prepend-1 append-1">
-        <h1></h1>
-        <div class="span-8">
-          <img src="{{ 'Andrea_Cheng_2.png' | theme_image_url }}" style="width:100%" >
-          <div class="employee">
-            <h3>Name:</h3> <p>Andrea Cheng / 郑天文</p>
-            <h3>Position:</h3> <p>亚太区市场营销主管</p>            
-            <h3>Email:</h3> <p>andrea.cheng@coresystems.ch</p>
-          </div>
+        <h3>
+          {% editable_short_text 'coresystems shanghai employee' %}
+  
+        <div class="span-24 prepend-top prepend-2 append-1">
+          {% for employee in contents.employees%}
+          <div class="span-7" style="margin-left:0.5em">
+            <div class="picturestyle1" style="width:220px">
+              <div style="overflow:hidden">
+                <img src="{{ employee.picture.url | image_url }}" style="max-height:310px; display:block; margin:auto">
+              </div>
+            </div>
+            <div class="employee">
+              <h3>Name:</h3> <p>{{employee.name}}</p>
+              <h3>Position:</h3> <p>{{employee.title}}</p>
+              <h3>Email:</h3> <p>{{employee.email}}</p>
+            </div>
+          </div>                
+          {% endfor %}
         </div>
-      </div>
+  
     </div>    
   </div>
     {% include 'footer' %}
