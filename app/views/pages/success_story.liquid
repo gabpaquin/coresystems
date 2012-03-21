@@ -1,12 +1,12 @@
 {% extends parent %}
 {% block top_section %}
   {% include 'top_section_mini' %}
-{% endblock %}  
+{% endblock %} 
 {% block content %}
   <div id="success_story" class="white_section section_blue_line">  
     <div class="container">
       <div class="span-24 last">
-        <h3>
+        <h3 style="font-size:2em; text-align:center; margin-bottom:0em">
         {% editable_short_text 'sucess story header' %}
            成功案例
         {% endeditable_short_text%}
@@ -45,8 +45,10 @@
         {% endeditable_long_text %}
         </div> 
         <div class="sidemap_line span-24 last">
-        </div>     
-        <h2>
+        </div>   
+        </div> 
+        <div class="span-24 last">        
+        <h2 style="text-align:right">
         {% editable_short_text 'sucess story 2 title' %}
           成功案例-劳伦斯 Lorentz
         {% endeditable_short_text%}

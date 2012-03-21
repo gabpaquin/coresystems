@@ -167,6 +167,10 @@ body .custom-prepend-15 {
   #header {
     padding: 15px 0 20px;
     vertical-align: middle;
+
+  .span-3{
+    margin-top:-0.35em;
+  }  
   }
   .weibo a {
     background: url('../images/weibo.jpg') no-repeat center center;
@@ -233,7 +237,9 @@ body .custom-prepend-15 {
   text-decoration: none;
   color:black;
 
-  &:hover{color:blue;}
+  &:hover{
+    color:#0066CC;
+    text-decoration: underline;}
   }
 }
 
@@ -286,8 +292,8 @@ body .custom-prepend-15 {
 #product_top_section {
   margin: 10px 0 20px;
   background: url("../images/productpage_top2.jpg") no-repeat center center;
-  height: 464px;
-  width: 950px;
+  height: 495px;
+  width: 970px;
 }
 
 /**-----------------------------------**/
@@ -335,32 +341,53 @@ body .custom-prepend-15 {
   margin-bottom: 10px;
 }
 
+
+/**-----------------------------------**/
+/**------------- PRODUCT -------------**/
+/**-----------------------------------**/
+
 #on_demand {
-  .span-3 {
-    margin-left: 1.8em;
-    max-height: 80px;
+  .span-2 {
+    margin-right: 0.25em;
     overflow: hidden;
-    
   }
+
   .span-24 {
     margin-top:0.6em;
   }
   h4 {
-    font-size: 1.6em;
+    font-size: 1.2em;
     font-weight: 700;
     color: #06C;
     margin-bottom:0.25em;
   }
   h3{
-    font-size: 1.6em;
+    font-size: 2.5em;
     font-weight: 700;
+    color: grey;
+  }
+
+  p{
+    margin-bottom:0em;
+    font-size:1.2em;
+  }
+
+  .product_mobile{
+    margin-bottom:3em;
+    font-size:1.3em;
+  }
+
+  img{
+    max-width:50px;
   }
 }
 
 #on_premise {
-  .span-4 {
+  .span-2 {
+    margin-right: 0.25em;
+    overflow: hidden;    
     img {
-      width: 150px;
+      width:50px
     }
   }
   .span-18 {
@@ -374,15 +401,175 @@ body .custom-prepend-15 {
   h4 {
     font-size: 1.6em;
     font-weight: 700;
-    color: #06C;
+    color: #06C;;
     margin-bottom:0.25em;
   }
   h3{
-    font-size: 1.6em;
+    font-size: 2.5em;
     font-weight: 700;
+    color: grey;
+  }
+
+  p{
+    margin-bottom:0em;
+    font-size:1.2em;
+  }
+
+  .product_premise{
+    margin-bottom:3em;
+    font-size:1.3em;
   }
 }
 
+#on_demand .span-11{
+  margin:0em;
+}
+
+#on_demand .span-13{
+  margin-bottom:1em;
+}
+
+#on_premise .span-13{
+   margin-bottom:3em;
+}
+
+#product_topic #product_description p{
+  font-size:1.2em;
+}
+
+#ecommerce, #map{
+  margin-top: 4em;
+}
+
+#coresystems_overview{
+  font-size:1.2em;
+}
+
+
+/**-----------------------------------**/
+/**------------- SERVICE -------------**/
+/**-----------------------------------**/
+
+#services{
+  h3{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: grey;
+    margin-bottom: 0.3em;
+  }
+
+  h4{
+    font-size:1.5em;
+    font-weight: 700;
+    margin-left:3em;
+  }
+
+p.service_description{
+  font-size:1.4em;
+  margin-left:3.2em;
+  margin-top:0em}   
+
+p.service_info{  
+  font-size:1.4em;  
+  margin-left:3.5em;
+  margin-top:2em;  
+
+  span{
+    color: #22b24c;
+  }     
+}
+
+blockquote{
+  margin:0;
+  color: black;
+  font-size: 1.3em; 
+
+span{
+      font-style:normal;
+  }
+
+.bqstart1 {
+     float: left;
+     height: 45px;
+     margin-top: -50px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+     font-size: 700%;
+     color: #c7c7c7;
+ }
+
+
+ .bqend1 {
+     float: right;
+     height: 25px;
+     margin-top: -90px;
+     padding-top: 0px;
+     font-size: 700%;
+     color: #c7c7c7;
+     margin-right: 345px;
+ }   
+
+.bqstart2 {
+     float: left;
+     height: 45px;
+     margin-top: -50px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+     font-size: 700%;
+     color: #c7c7c7;
+ }
+
+
+ .bqend2 {
+     float: right;
+     height: 25px;
+     margin-top: -90px;
+     padding-top: 0px;
+     font-size: 700%;
+     color: #c7c7c7;
+     margin-right: -210px;
+ }  
+
+.bqstart3 {
+     float: left;
+     height: 45px;
+     margin-top: -50px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+     font-size: 700%;
+     color: #c7c7c7;
+ }
+
+
+ .bqend3 {
+     float: right;
+     height: 25px;
+     margin-top: -90px;
+     padding-top: 0px;
+     font-size: 700%;
+     color: #c7c7c7;
+     margin-right: 290px;
+ }
+
+}
+}
+
+#service_intro{
+  h3{
+    font-size:2.5em;
+    color:black;
+    margin-bottom:1em;
+  }
+
+  p{
+    font-size:1.3em;
+    margin-bottom:1.5em;
+  }
+
+  span{
+    font-size:1.2em;
+  }
+}
 /**-----------------------------------**/
 /**---------- FOOTER STUFF -----------**/
 /**-----------------------------------**/
@@ -445,24 +632,3 @@ body .custom-prepend-15 {
     }
   }
 }
-
-#on_demand .span-11{
-  margin:.5em 1em .5em 2em;
-}
-
-#product_topic #product_description p{
-  font-size:1.2em;
-}
-
-#ecommerce, #map{
-  margin-top: 4em;
-}
-
-#ecommerce .span-3{
-  
-}
-
-#coresystems_overview{
-  font-size:1.2em;
-}
-
