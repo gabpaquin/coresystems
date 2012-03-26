@@ -1,24 +1,132 @@
 {% extends parent %}
 {% block top_section %}
-  {% include 'top_section_mini' %}
+<div class="top_section">
+  <div class="container">
+    {% include 'header' %}
+    <div id="partner_top_section">
+        
+    </div>
+  </div>  
+</div>
 {% endblock %}
 {% block content %}
   <div class="container">
   </div>
-  <div id="partner" class="white_section" style="margin-bottom:400px">  
+  <div id="partner" class="white_section">  
     <div class="container">
-      <div class="span-22 prepend-1 append-bottom last">
-        <h3>our partner network</h3>
-        {% editable_long_text 'Devices' %}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate varius orci, id porta purus accumsan quis. Proin eget orci nisi, nec congue risus. Maecenas aliquet lacus vel risus porttitor tempor. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam erat volutpat. Duis hendrerit neque eu nibh tristique vel tempus risus porttitor. Integer sit amet pharetra enim. Maecenas tristique lorem sed dolor euismod vitae faucibus arcu mollis. Nulla eu lectus at orci porta congue sed lobortis risus. Nam venenatis ornare convallis.  
+      <div class="span-24 append-bottom last">        
+        {% editable_short_text 'partner title 1' %}
+          <h3>共同合作，我们会更强</h3>
+        {% endeditable_short_text %} 
+
+        {% editable_long_text 'partner description' %}
+          <p ç>
+            共同成长 － 满足合作伙伴的需求，是coresystems合作伙伴网络的方向标的。Coresystems专注于协助合作伙伴们，充分开发他们的经济潜力。
+          </p>
         {% endeditable_long_text %} 
+
+        {% editable_short_text 'partner title 2' %}
+          <h3>想成为合作伴吗？</h3>
+        {% endeditable_short_text %}         
+
+        <div class="span-9 append-1">
+          {% editable_short_text 'download' %}
+            <p style="text-align:right"><a href="" >下载coresuite介绍手册</a></p>
+          {% endeditable_short_text %}  
+        </div> 
+
+        <div class="span-14 last">
+          {% editable_long_text 'download description' %}
+            <p>
+            通过《coresuite介绍手册》，您可逐步学习如何使用我们的增强组件。
+            这本指南同时也向您介绍了coresuite的众多优势。
+            在文中的结尾部分，您可以找到关于ERP软件解决方案的实用链接。              
+            </p>
+          {% endeditable_long_text %} 
+        </div>  
       </div>
+
       <div class="sidemap_line span-24 last">
       </div>  
-      <div class="span-22 prepend-1 append-bottom last">
-        <h3>interested in becoming a member?</h3>
-        <a href="#">become a member</a><br>
-        <a href="#">download starter guide</a>        
+
+      <div class="span-24 append-bottom last">      
+        {% editable_short_text 'partner title 3' %}
+          <h3>我们的合作伙伴网络</h3>
+        {% endeditable_short_text %} 
+
+
+        {% editable_short_text 'partner network 1' %}
+          <h4>我们全球的合作伙伴</h4> 
+        {% endeditable_short_text %} 
+
+        {% editable_long_text 'download description' %}
+          <p style="text-align:center"> 
+            与我们的合作伙伴来自世界各地的合作对我们非常重要，因为我们坚信，我们可以一起成长，全面发展我们的经济潜力。
+            我们的全球合作伙伴网络的发展不可避免地和其他大洲蔓延。
+
+            <span style="display:block; margin-top:1em">请<a href="">点击这里</a>查看我们的全球合作伙伴名单。</span>
+          </p>
+        {% endeditable_long_text %} 
+
+        {% editable_short_text 'partner network 2' %}
+          <h4>我们在中国的合作伙伴</h4>
+        {% endeditable_short_text %} 
+
+        <div id="partner_images">
+
+          <img src="{{ 'neusoft.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px; "> 
+          <img src="{{ 'hartung.png' | theme_image_url }}" style="max-height: 40px; margin-right: 20px; padding-bottom:3px">
+          <img src="{{ 'axa.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+          <img src="{{ 'atc.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;"> 
+          <img src="{{ 'transinfo.png' | theme_image_url }}" style="max-height: 30px; margin-right: 20px;">           
+
+        </div>  
+
+          {% editable_short_text 'partner network 3' %}
+          <h4>成为我们合作伙伴的优势</h4>
+          {% endeditable_short_text %}       
+
+
+          {% editable_long_text 'download description' %}
+            <p>     
+              <span class="green_arrow">在coresystems 网站上建立链接</span>
+              <span class="green_arrow">如终端客户直接联系coresystems，则实行区域领先分销</span>
+              <span class="green_arrow">免费访问论坛</span>
+              <span class="green_arrow">由于定期的coresuite许可证优惠活动，合作伙伴可占有绝对的价格优势。</span>
+              <span class="green_arrow">获取关于基础研讨会的信息</span>
+              <span class="green_arrow">独立研讨会带来无限可能</span>
+            </p>
+          {% endeditable_long_text %} 
+        </div>  
+
+      <div class="sidemap_line span-24 last">
+      </div>    
+
+      <div id="partner_contact" class="span-24 append-bottom last">
+        <div class="span-10">
+          <img src="{{ 'minwen_partner.jpg' | theme_image_url }}" style="max-height: 370px; margin-left:100px">
+        </div>  
+        <div class="span-14 last">
+          {% editable_short_text 'partner title 3' %}
+            <h3 class="green_tree" style="margin-top:2em">索求合作伙伴合约</h3>
+          {% endeditable_short_text %}  
+          {% editable_long_text 'partner contact' %}
+            <p>     
+              若您想要我们的许可证，请向我们索取一分合作伙伴合约并传真至
+              <span style="display:block; margin-top:2em">FAX：＋86 21 2022 3099</span>
+              
+            <span class="span-2" style="margin-top:2em">
+                联系人: 
+              </span>              
+              <span class="span-7" style="margin-top:2em">
+                Robert Halasz
+                robert.halasz@coresystems.ch
+              </span>
+            </p>
+          {% endeditable_long_text %}           
+        </div>      
+      </div>
+
       </div>
     </div>
   </div>

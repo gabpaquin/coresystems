@@ -1,14 +1,14 @@
 {% extends parent %}
 {% block top_section %}
   {% include 'top_section_mini' %}
-{% endblock %}
+{% endblock %} 
 {% block content %}
   <div id="company_overview" class="white_section">  
     <div class="container">
-      <div class="span-9">
-          <img src={{ 'company1.png' | theme_image_url }} style="max-width:360px; margin-top:50px">
+      <div class="span-9 append-1">
+          <img src="{{ 'switzerland_office.jpg' | theme_image_url }}" style="max-height:220px; margin-top:55px; margin-left:95px">
       </div>
-      <div class="span-15 prepend-top last">
+      <div class="span-14 prepend-top last">
 			{% editable_short_text 'coresystems global' %}
         <h3><a href="/company_overview">CORESYSTEMS</a></h3>
 			{% endeditable_short_text %}
@@ -16,47 +16,55 @@
       <p>
         coresystems ag 是一家成立于2002年的独资经营公司，总部设在瑞士Windisch。自2006年起，该公司经改造，成为了一家股份制公司。coresystems ag 在全球拥有超过5,400个客户（55,000个用户），是面向中小型企业的SAP产品标准化插件解决方案的领先供应商。公司已获得认证成为SAP金牌合作伙伴（SSP）以及微软ISV银牌合作伙伴。 coresystems 的客户群囊括了各行各业的中小型公司和大型企业.
 
-        coresuite 应用程序从ERP环境中采集本地信息，并通过“云计算”进行综合，从而实现增值。与此同时，这些程序也可移动使用（如在iPhone 上）。目前，coresystems 的员工超过100人，并陆续在布赖斯高的弗赖堡、伦敦、纽约市、迈阿密和上海增设了办事处。此外，coresuite 解决方案由全球超过350家合格的SAP合作商负责营销。同时，公司不仅在戈尔韦郡和哥本哈根设立了支持中心，还在克卢日-纳波卡（Cluj-Napoca）设立了开发中心。
+        coresuite 应用程序从ERP环境中采集本地信息，并通过“云计算”进行综合，从而实现增值。与此同时，这些程序也可移动使用（如在iPhone 上）。目前，coresystems 的员工超过100人，并陆续在布赖斯高的弗赖堡、伦敦、纽约市、迈阿密和上海增设了分公司。此外，coresuite 解决方案由全球超过350家合格的SAP合作商负责营销。同时，公司不仅在戈尔韦郡和哥本哈根设立了支持中心，还在克卢日-纳波卡（Cluj-Napoca）设立了开发中心。
       </p>          
       {% endeditable_long_text %}   
       </div>
     </div>
   </div>
-  <div id="china_office" class="grey_section">  
+  
+  <div id="china_office" class="white_section">  
     <div class="container">
+      <div class="sidemap_line span-24 last">
+      </div>       
       <div class="span-14 custom-prepend-15 prepend-top">
 			{% editable_short_text 'coresystems shanghai' %}
         <h3><a href="/china_team">CORESYSTEMS 上海</a></h3>
 			{% endeditable_short_text %}
       {% editable_long_text 'coresystems shanghai description' %}
-      <p><a href="/china_team">
+      <p>
         是一个总部设在瑞士的欧洲领先云计算企业。发展战略重点的是在成熟及新兴市场中为中小型企业提供一站式的ERP产品及服务。理所当然亚洲市场是其发展的非常重要的部分。
 
         我们自2009年进入中国，在合作伙伴中以我们的优秀的SAP增强模块产品coresuite著称；以SAP产品的ERP咨询服务为重点立足于中国市场，三年来为诸如Bruderer, Proceq, Beumer等国外知名企业提供了客户满意的产品和咨询服务。
  
         到2012年底，我们将拥有30名专业优秀的SAP ERP管理咨询顾问和云计算技术的开发人员。
-      </a></p>
+      </p>
         {% endeditable_long_text %}   
       </div>
       <div class="span-7 prepend-1 last">
-          <img src={{ 'company2.png' | theme_image_url }} style="max-width:360px; margin-top:40px">
+          <img src="{{ 'china_office.jpg' | theme_image_url }}" style="max-width:360px; margin-top:20px; max-height:180px">
       </div>
+
+      <div class="sidemap_line span-24 last">
+      </div>   
+
     </div>    
   </div>  
+ 
   <div id="success_story" class="white_section">  
     <div class="container">
-      <div class="span-9">
-          <img src={{ 'company3.png' | theme_image_url }} style="max-width:360px; margin-top:30px">
+      <div class="span-9 append-1">
+          <img src="{{ 'burderer.png' | theme_image_url }}" style="max-width:320px; margin-top:50px">
       </div>
-      <div class="span-15 prepend-top last">
+      <div class="span-14 prepend-top last">
 			{% editable_short_text 'sucess stories' %}
         <h3><a href="/success_story">客户群</a></h3>
 			{% endeditable_short_text %}
       {% editable_long_text 'sucess stories description' %}
-      <p><a href="/success_story">
+      <p>
         作为一个冲压领域的全球技术合作伙伴，博瑞达机械是一个以最高的水平提供一站式全面的支持和以市场为导向的解决方案－确保最高的生产率。
         在许多行业－例如汽车行业及其供应商，计算机行业和电子行业－主要公司都在 BRUDERER 品牌的精度优势获得盈利。
-      </a></p>
+      </p>
       {% endeditable_long_text %}   
       </div>
     </div>

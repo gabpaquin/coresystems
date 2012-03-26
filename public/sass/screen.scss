@@ -4,7 +4,7 @@
 
 body {
 	@include blueprint;
-  font:14px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font:14px "Lucida Sans Unicode", "Microsoft YaHei", "Lucida Grande", sans-serif;
   a:visited { color: #06C; }
 }
 
@@ -221,13 +221,13 @@ body .custom-prepend-15 {
 
 #frontpage_pane_integration {
   background-color:white !important;
-  background: url('http://www.coresystems.ch/wp-content/uploads/pic/3846_01_Visuals_Subsidiary_314px_en.jpg') no-repeat 4px 20px; 
+  background: url('../images/service_overview_picture1.jpg') no-repeat 4px 20px; 
   background-size: 320px;
 }
 
 #frontpage_pane_mobility {
   background-color:white !important;
-  background: url('http://www.coresystems.ch/wp-content/uploads/pic/7606_Consulting_3_Bilder2.jpg') no-repeat 4px 20px; 
+  background: url('../images/service_overview_picture2.png') no-repeat 4px 20px; 
   background-size: 320px;
 }
 
@@ -292,6 +292,13 @@ body .custom-prepend-15 {
 #product_top_section {
   margin: 10px 0 20px;
   background: url("../images/productpage_top2.jpg") no-repeat center center;
+  height: 495px;
+  width: 970px;
+}
+
+#partner_top_section {
+  margin: 10px 0 20px;
+  background: url("../images/partner.png") no-repeat center center;
   height: 495px;
   width: 970px;
 }
@@ -540,7 +547,6 @@ span{
      color: #c7c7c7;
  }
 
-
  .bqend3 {
      float: right;
      height: 25px;
@@ -548,9 +554,21 @@ span{
      padding-top: 0px;
      font-size: 700%;
      color: #c7c7c7;
-     margin-right: 290px;
- }
+     margin-right: 285px;
+   }
 
+/** .bqend3 {
+    background: url('../images/quote_end.png') no-repeat;
+    height: 53px;
+    display: block;  
+    float: right;
+    height: 25px;
+    margin-top: -50px;
+    padding-top: 10px;
+    font-size: 700%;
+    color: #c7c7c7;
+    margin-right: 270px;
+    content:""; }**/
 }
 }
 
@@ -607,14 +625,12 @@ span{
 /**-----------------------------------**/
 
 .employee{
-  @include prepend(1);
   @include column(8);
 
   h3{
     color: #0066CC;
     font-size: 1.2em;
     margin:0.5em 0 0 0em;}
-
 
   p{
     @include column(8);
@@ -630,5 +646,76 @@ span{
 
     &:hover{color:blue;}
     }
+  }
+}
+
+#china_office, #success_story, #company_overview{
+  p{
+    font-size:1em;
+  }
+}
+
+/**-----------------------------------**/
+/**---------- PARTNER ----------------**/
+/**-----------------------------------**/
+
+#partner{
+  h3{
+    font-size: 2.5em;
+    font-weight: 700;
+    color: grey;  
+    text-align:center;    
+  }  
+
+  h4{
+    font-weight:700;
+    display:block;
+    margin-bottom:2.5em;
+    margin-top:1em;
+    font-size:1.7em;
+    text-align:center;
+  }
+
+  p{
+    font-size:1.2em;
+    text-align:left;    
+  }
+
+
+}
+
+#partner_images{
+  margin-bottom:4em;
+  margin-left:6em;
+  img{
+    padding-bottom: 10px;
+  }
+}
+
+.green_arrow {
+  background: url('../images/green_arrow.png') no-repeat;
+  background-position: left 70% ;
+  background-size: 20px 20px;
+  height: 20px;
+  display: block;
+  content: "";
+  padding-left:20px;
+  padding-bottom:5px;
+}  
+
+.green_tree{
+  background: url('../images/green_tree.png') no-repeat;
+  background-position: 60% center ;
+  background-size: auto 40px;
+  display: block;
+  content: "";
+  padding-right:50px;
+  padding-bottom:5px;
+  padding-top:5px;
+}  
+
+#partner_contact{
+  h3,p{
+    text-align:left;
   }
 }

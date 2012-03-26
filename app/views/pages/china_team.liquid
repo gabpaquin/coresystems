@@ -39,26 +39,27 @@
         </p>
         {% endeditable_long_text %}
         <h3>
-          {% editable_short_text 'coresystems shanghai employee' %}
-  
-        <div class="span-24 prepend-top prepend-2 append-1">
-          {% for employee in contents.employees%}
-          <div class="span-7" style="margin-left:0.5em">
-            <div class="picturestyle1" style="width:220px">
-              <div style="overflow:hidden">
-                <img src="{{ employee.picture.url | image_url }}" style="max-height:310px; display:block; margin:auto">
-              </div>
+        {% editable_short_text 'coresystems shanghai employee' %}
+        上海员工
+        {% endeditable_short_text %}
+        </h3>
+      </div> 
+      <div class="span-24 prepend-top prepend-2 append-1">
+        {% for employee in contents.employees%}
+        <div class="span-7" style="margin-left:0.5em">
+          <div class="picturestyle1" style="width:220px">
+            <div style="overflow:hidden">
+              <img src="{{ employee.picture.url | image_url }}" style="max-height:310px; display:block; margin:auto">
             </div>
-            <div class="employee">
-              <h3>Name:</h3> <p>{{employee.name}}</p>
-              <h3>Position:</h3> <p>{{employee.title}}</p>
-              <h3>Email:</h3> <p>{{employee.email}}</p>
-            </div>
-          </div>                
-          {% endfor %}
-        </div>
-  
-    </div>    
+          </div>
+          <div class="employee">
+            <h3>Name:</h3> <p>{{employee.name}}</p>
+            <h3>Position:</h3> <p>{{employee.title}}</p>
+            <h3>Email:</h3> <p>{{employee.email}}</p>
+          </div>
+        </div>                
+        {% endfor %}
+      </div>   
   </div>
     {% include 'footer' %}
 {% endblock %}
